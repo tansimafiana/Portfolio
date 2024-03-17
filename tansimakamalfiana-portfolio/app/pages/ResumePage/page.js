@@ -30,13 +30,13 @@ export default function ResumePage() {
         </div>*/}
 
       <div className="w-screen bg-pink-50 flex-col pb-12">
-        <h1 className=" mx-auto justify-center flex py-4 text-6xl">RESUME</h1>
+        <h1 className=" mx-auto justify-center flex py-4 text-4xl">RESUME</h1>
 
         {/* Double-sided pane */}
         <div className={size.width < 1280 ? slimWindowClass[0] : stretchedWindowClass[0]}>
           {/* First Side */}
           <div className={size.width < 1280 ? slimWindowClass[1] : stretchedWindowClass[1]}>
-            <h2 className=" text-4xl pb-12 font-normal">Experience</h2>
+            <h2 className=" text-3xl pb-12 font-normal">Experience</h2>
 
             {/* Experience Field */}
             <div className="">
@@ -53,7 +53,7 @@ export default function ResumePage() {
                 <li>• Achieved recognition as a Certified Cyferd Modeller for exceptional contributions to project development and implementation</li>
                 <li>• Utilized engineering principles to drive innovation and collaboration, supporting business objectives in a dynamic team setting</li>
                 <li>• Applied Lean principles and process optimization, achieving a 15% reduction in production cycle time and a 20% increase in operational efficiency</li>
-                <li>• References: <a className="underline" href="mailto:haider.al-seaidy@cyferd.com">haider.al-seaidy@cyferd.com</a> and <a href="mailto:bailey.carlson@cyferd.com" className="underline">bailey.carlson@cyferd.com</a></li>
+                <li>• References: <a className="hover:bg-rose-300" href="mailto:haider.al-seaidy@cyferd.com">haider.al-seaidy@cyferd.com</a> </li>
               </ul>
             </div>
 
@@ -99,7 +99,7 @@ export default function ResumePage() {
               </ul>
             </div>
 
-            <h2 className=" text-4xl pb-12 mt-10">Projects</h2>
+            <h2 className=" text-3xl pb-12 mt-10">Projects</h2>
             <div className="">
               <div className="w-full flex justify-space mx-auto">
                 <h3 className="mr-auto justify-start text-2xl font-normal">Capstone Project</h3>
@@ -115,14 +115,14 @@ export default function ResumePage() {
                 <li>• Leveraged Visual Studio Code for coding, debugging, and Git/GitHub version control, achieving a boost in code quality and deployment efficiency</li>
                 <li>• Employed UML diagrams for system architecture, following agile and scrum methodologies</li>
                 <li>• Designed and developed an admin dashboard using React.js; streamlined management of 50+ cat breeds, 100 cats, and interactive site content, focusing in a increase in user satisfaction, and site content</li>
-                <li>• Implemented Tailwind CSS for rapid UI prototyping and responsive design</li>
+                <li>• Implemented Tailwind CSS for responsive design</li>
               </ul>
             </div>
           </div>
 
           {/* Second Side */}
           <div className={size.width < 1280 ? slimWindowClass[2] : stretchedWindowClass[2]}>
-            <h2 className=" text-4xl pb-12 font-normal">Education</h2>
+            <h2 className=" text-3xl pb-12 font-normal">Education</h2>
 
             <div className="w-full flex justify-space mx-auto">
               <h3 className="mr-1  justify-start text-2xl font-normal">Southern Alberta <br/>Institute of Technology</h3>
@@ -133,7 +133,7 @@ export default function ResumePage() {
               <h3 className="ml-auto pr-4 text-nowrap text-right">Calgary, AB</h3>
             </div>
 
-            <h2 className=" text-4xl mt-8 font-normal">Skills</h2>
+            <h2 className=" text-3xl mt-8 font-normal">Skills</h2>
             <div>
               <h3 className=" text-2xl mt-4 font-normal">Languages</h3>
               <p>Python, C-Sharp, SQL, Node.js, React Native, Next.js, XML, JavaScript, HTML5/CSS, JSON, Gradle</p>
