@@ -3,7 +3,9 @@ import FionaIcon from "@/app/components/FionaIcon"
 import GitHubIcon from "@/app/components/GitHubIcon"
 import LinkedInIcon from "@/app/components/LinkedInIcon"
 import Buttons from "@/app/components/Buttons"
-
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
               <div className="flex justify-center m-auto"><FionaIcon /></div>
 
               <div className="py-12 px-8 flex justify-between">
-                <GitHubIcon />
+                <GitHubIcon /> 
                 <LinkedInIcon />
               </div>
             </div>

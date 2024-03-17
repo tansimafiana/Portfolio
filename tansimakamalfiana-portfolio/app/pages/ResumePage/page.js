@@ -5,6 +5,7 @@ import FionaIcon from "@/app/components/FionaIcon"
 import GitHubIcon from "@/app/components/GitHubIcon"
 import LinkedInIcon from "@/app/components/LinkedInIcon"
 import Buttons from "@/app/components/Buttons"
+import { IoMdHome } from "react-icons/io";
 
 import Navigation from "@/app/navigation/page"
 import { useState, useEffect } from "react"
@@ -159,10 +160,9 @@ and interactive site content, focusing in a increase in user satisfaction, and s
             <div>
               <h3 className=" text-2xl mt-4">Skills</h3>
               <p>AutoCad, Use Cases, Test cases/scripts, Agile Methodologies, Emerging technologies, Software Development Life
-Cycle, Requirements Gathering, Application Development, Microsoft Office, MS Project, Software Configuration,
-Debugging, Performance testing, Quality Assurance, Prototyping, Documentation, Programming, Business
+Cycle, Requirements Gathering, Application Development, Microsoft Office, MS Project, Debugging, Quality Assurance, Prototyping, Documentation, Programming, Business
 Requirements, Software Troubleshooting, Technical Analysis, Data Analysis, Resource Management, Project
-Management, Lean principles, Stakeholder Management, Cost Analysis, Economic principles, Defect Management</p>
+Management, Lean principles, Engineering principles, Stakeholder Management, Cost Analysis, Economic principles, Defect Management</p>
             </div>
             <div>
               <h3 className=" text-2xl mt-4">Suitability</h3>

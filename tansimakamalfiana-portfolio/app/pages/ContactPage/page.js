@@ -6,6 +6,7 @@ import MailIcon from "@/app/components/MailIcon"
 import Buttons from "@/app/components/Buttons"
 
 import Navigation from "@/app/navigation/page"
+import { IoMdHome } from "react-icons/io";
 
 
 export default function ContactPage() {
@@ -33,17 +34,21 @@ export default function ContactPage() {
 
           <div className="flex-col justify-center ">
             <h1 className=" text-6xl py-4 px-8 text-center font-extrabold">Hello! Let's Connect?</h1>
-            <h3 className=" text-4xl py-4 px-8 flex justify-center text-center font-poppinsThin">Let's chat!</h3>
+            
 
-            <div className="px-24">
-                <div className="flex">
-                    <div className="mt-2 pr-4"><MailIcon /></div>
-                    <Buttons className=" text-lg p-2 hover:underline" text="Email me" href="../pages/ContactPage" />
-                </div>
-                <div className="flex">
-                    <div className="mt-2 pr-4"><LinkedInIcon /></div>
-                    <Buttons className=" text-lg p-2 hover:underline" text="Connect with me on LinkedIn" href="../pages/ContactPage" />
-                </div>
+            <div className="px-24 mt-6 flex-col flex">
+                    <button className="w-fit">
+                        <a target="_blank" href="mailto:tansimakamalfiana@gmail.com" className="flex hover:text-rose-300 hover:scale-110 transition duration-300">
+                            <div className="mt-2 pr-4"><MailIcon /></div>
+                            <p className=" text-lg p-2">Email me</p>
+                        </a>
+                    </button>
+                    <button className="w-fit">
+                        <a target="_blank" href="https://www.linkedin.com/in/tansima-kamal-fiana" className="flex hover:text-rose-300 hover:scale-110 transform transition duration-300">
+                            <div className="mt-2 pr-4"><LinkedInIcon /></div>
+                            <p className=" text-lg p-2">Connect with me on LinkedIn</p>
+                        </a>
+                    </button>
             </div>      
           </div>
         </div>
