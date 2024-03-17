@@ -10,12 +10,6 @@ import Navigation from "@/app/navigation/page"
 
 export default function ContactPage() {
   return (
-   
-
-
-
-
-
 <main className="w-screen h-screen bg-rose-100 flex-col text-black">
       
             <Navigation/>
