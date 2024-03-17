@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link"
+import { FaLinkedin } from "react-icons/fa";
+
 
 export default function LinkedInIcon() {
   return (
     <main>
         <a target="_blank" href="https://ca.linkedin.com/in/tansima-kamal-fiana">
-            <Image className="rounded-full" src="/LinkedIn.png" width="35" height="35" />
+            <FaLinkedin className="w-7 h-7" />
         </a>
     </main>
   );
