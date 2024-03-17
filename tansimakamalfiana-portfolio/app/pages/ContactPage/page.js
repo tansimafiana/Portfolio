@@ -18,11 +18,7 @@ export default function ContactPage() {
 
 <main className="w-screen h-screen bg-rose-100 flex-col text-black">
       
-            <div className=" flex top-0 right-0 h-16 w-full justify-end p-4">
-              <Buttons text="PORTFOLIO" href="../pages/PortfolioPage"/>
-              <Buttons text="RESUME" href="../pages/ResumePage"/>
-              <Buttons text="CONTACT" href="../pages/ContactPage" />
-            </div>
+            <Navigation/>
 
       <div className="m-auto flex  w-red-200 w-4/5 justify-center h-full">
         <div className="flex text-black align-middle py-36">

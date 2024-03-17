@@ -21,7 +21,7 @@ export default function ResumePage() {
                            "h-full mt-6 mx-auto w-full"]
 
   return (
-    <main className="bg-[#FBC5B8] text-black my-auto flex-col flex flex-wrap rounded-2xl">
+    <main className="bg-rose-100 text-black my-auto flex-col flex flex-wrap ">
       <Navigation />
 
       {/* DEBUG
@@ -29,7 +29,7 @@ export default function ResumePage() {
           {size.width}px / {size.height}px
         </div>*/}
 
-      <div className="w-screen bg-pink-50 flex-col rounded-2xl pb-12">
+      <div className="w-screen bg-pink-50 flex-col pb-12">
         <h1 className=" mx-auto justify-center flex py-4 text-6xl">RESUME</h1>
 
         {/* Double-sided pane */}
@@ -68,7 +68,7 @@ increase in operational efficiency</li>
                 <h3 className="ml-auto pr-4">01/23 - Present</h3>
               </div>
               <div className="w-full flex justify-space mx-auto">
-                <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
+                <h3 className="ml-auto pr-4 italic">Saudi Arabia, Jeddah</h3>
               </div>
               <ul className="mt-4">
                 <li>• Resolved campus computer issues for 100+ users</li>
@@ -135,8 +135,8 @@ and interactive site content, focusing in a increase in user satisfaction, and s
             <h2 className=" text-4xl pb-12">Education</h2>
 
             <div className="w-full flex justify-space mx-auto">
-              <h3 className="mr-auto justify-start text-2xl">Southern Alberta Institute of Technology</h3>
-              <h3 className="ml-auto pr-4">09/22 - 04/24</h3>
+              <h3 className="mr-1 justify-start text-2xl">Southern Alberta Institute of Technology</h3>
+              <h3 className="mr-auto text-nowrap pr-4">09/22 - 04/24</h3>
             </div>
             <div className="w-full flex justify-space mx-auto">
               <h3 className="mr-auto pr-4">Diploma in Software Development - Global Campus Scholarship Award</h3>
