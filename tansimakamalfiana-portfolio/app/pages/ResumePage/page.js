@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import FionaIcon from "@/app/components/FionaIcon"
 import GitHubIcon from "@/app/components/GitHubIcon"
@@ -5,20 +7,35 @@ import LinkedInIcon from "@/app/components/LinkedInIcon"
 import Buttons from "@/app/components/Buttons"
 
 import Navigation from "@/app/navigation/page"
+import { useState, useEffect } from "react"
 
 
 export default function ResumePage() {
+  const size = useWindowSize()
+
+  const stretchedWindowClass = ["w-10/12 h-full flex justify-center mx-auto",
+                                "h-full",
+                                "h-full pl-8 ml-4 mx-auto w-4/5"]
+  const slimWindowClass = ["w-10/12 h-full flex flex-wrap justify-center mx-auto",
+                           "h-full",
+                           "h-full mt-6 mx-auto w-full"]
+
   return (
     <main className="bg-[#FBC5B8] text-black my-auto flex-col flex flex-wrap rounded-2xl">
       <Navigation />
+
+      {/* DEBUG
+        <div>
+          {size.width}px / {size.height}px
+        </div>*/}
 
       <div className="w-screen bg-pink-50 flex-col rounded-2xl pb-12">
         <h1 className=" mx-auto justify-center flex py-4 text-6xl">RESUME</h1>
 
         {/* Double-sided pane */}
-        <div className="w-10/12 h-full flex flex-wrap justify-center mx-auto">
+        <div className={size.width < 1280 ? slimWindowClass[0] : stretchedWindowClass[0]}>
           {/* First Side */}
-          <div className=" h-full bg-red-500 max-w-3xl">
+          <div className={size.width < 1280 ? slimWindowClass[1] : stretchedWindowClass[1]}>
             <h2 className=" text-4xl pb-12">Experience</h2>
 
             {/* Experience Field */}
@@ -33,8 +50,8 @@ export default function ResumePage() {
               <ul className="mt-4">
                 <li>• Collaborated with the solution expert of Cyferd to develop an innovative mental health application using Cyferd
 technology, implementing JSON coding</li>
-                <li>• Crafted PowerPoint presentations showcasing application’s front-end features, boosting user satisfaction
-• Achieved recognition as a Certified Cyferd Modeller for exceptional contributions to project development and
+                <li>• Crafted PowerPoint presentations showcasing application's front-end features, boosting user satisfaction</li>
+                <li>• Achieved recognition as a Certified Cyferd Modeller for exceptional contributions to project development and
 implementation</li>
                 <li>• Utilized engineering principles to drive innovation and collaboration, supporting business objectives in a dynamic
 team setting</li>
@@ -114,7 +131,7 @@ and interactive site content, focusing in a increase in user satisfaction, and s
           </div>
 
           {/* Second Side */}
-          <div className=" h-ful pl-8 ml-4">
+          <div className={size.width < 1280 ? slimWindowClass[2] : stretchedWindowClass[2]}>
             <h2 className=" text-4xl pb-12">Education</h2>
 
             <div className="w-full flex justify-space mx-auto">
@@ -126,10 +143,67 @@ and interactive site content, focusing in a increase in user satisfaction, and s
               <h3 className="ml-auto pr-4 ">Calgary, AB</h3>
             </div>
 
-            <h2 className=" text-4xl pb-12 mt-6">Skills</h2>
+            <h2 className=" text-4xl mt-8">Skills</h2>
+            <div>
+              <h3 className=" text-2xl mt-4">Languages</h3>
+              <p>Python, C-Sharp, SQL, Node.js, React Native, Next.js, XML, JavaScript, HTML5/CSS, JSON, Gradle</p>
+            </div>
+            <div>
+              <h3 className=" text-2xl mt-4">Frameworks</h3>
+              <p>React Native, Next.js, Node.js, Flask, FastAPI, .NET Framework, XNA Framework</p>
+            </div>
+            <div>
+              <h3 className=" text-2xl mt-4">Developer Tools</h3>
+              <p>Git, VS Code, Visual Studio, Figma, MySQL, Oracle, SQLite, ASP.NET Core, Android Studio</p>
+            </div>
+            <div>
+              <h3 className=" text-2xl mt-4">Skills</h3>
+              <p>AutoCad, Use Cases, Test cases/scripts, Agile Methodologies, Emerging technologies, Software Development Life
+Cycle, Requirements Gathering, Application Development, Microsoft Office, MS Project, Software Configuration,
+Debugging, Performance testing, Quality Assurance, Prototyping, Documentation, Programming, Business
+Requirements, Software Troubleshooting, Technical Analysis, Data Analysis, Resource Management, Project
+Management, Lean principles, Stakeholder Management, Cost Analysis, Economic principles, Defect Management</p>
+            </div>
+            <div>
+              <h3 className=" text-2xl mt-4">Suitability</h3>
+              <p>Time Management, Problem-solving, Interpersonal skills, Communication, Written Communication,
+Collaborative, Organized, Team player, Flexibility, Analytical, Presentation, Customer Reporting tools, Key Performance
+Indicators, Financial Reporting, Customer service</p>
+            </div>
           </div>
         </div>
       </div>
     </main>
   );
+}
+
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+     
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
 }
