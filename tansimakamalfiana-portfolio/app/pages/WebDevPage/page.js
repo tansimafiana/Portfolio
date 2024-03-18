@@ -105,34 +105,40 @@ export default function WebDevPage() {
             <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Cats List - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
             <h3 className="text-2xl">Cat List (Logged In - Breeder):</h3>
             <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Cats List - Logged In (Breeder).png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">:</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Statemachinediagram2.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">Activity Diagram (AddNewCat):</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/ActivityDiagramBreederAddNewCat.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">Activity Diagram (Purchase Cat):</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/ActivityDiagramCustomerPurchaseCatUpdated.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl"> Cat (Logged Out): </h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Cat - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">Litter List (Logged Out):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Litters List - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">Litter (Logged Out):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Litter - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">Chat Portal (Logged In):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Chat Portal - Logged In.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">User Page (Logged In):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/User Page - Logged In.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+
+
           </div>
 
 
-          {/* Slide 6 */}
+
+           {/* Slide 6 */}
+           <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center">Demo</h2>
+            <p>UNDER CONSTRUCTION</p>
+                        
+          </div>
+
+
+          {/* Slide 7 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Self Reflection</h2>
             <p>The capstone project for my portfolio is an enriching journey, offering opportunities for growth and learning. Working within a team, I hone communication and collaboration skills. Applying theoretical knowledge to real-world scenarios strengthens my understanding of software development principles. Overcoming technical challenges boosts problem-solving abilities. This project serves as a platform for personal and professional growth, enhancing my skills and credibility as a software developer.</p>
                         
           </div>
 
-          {/* Slide 7 */}
-          <div className="flex flex-col pt-20 w-full space-y-6">
-            <h2 className="text-3xl text-center"> Acknowledgements</h2>
-            <p>Self-Reflection:
-The capstone project for my portfolio is an enriching journey, offering opportunities for growth and learning. Working within a team, I hone communication and collaboration skills. Applying theoretical knowledge to real-world scenarios strengthens my understanding of software development principles. Overcoming technical challenges boosts problem-solving abilities. This project serves as a platform for personal and professional growth, enhancing my skills and credibility as a software developer. </p>
-          </div>
+          
 
-          {/* Slide 8 */}
-          <div className="flex flex-col pt-20 w-full space-y-6">
-            <h2 className="text-3xl text-center">Certificate</h2>
-            <div className="flex justify-center w-11/12 mx-auto"><Image className="justify-center flex" src="/Cyferd-Certificate-TF (1).png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-          </div>
+         
         </div>
       </div>
     </main>
