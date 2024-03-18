@@ -30,7 +30,7 @@ export default function ContactPage() {
         </button>
         <p>|</p>
         <button className="hover:text-rose-300 text-xl">
-          <Link href="/pages/InternshipPage">Internship</Link></button>
+          <Link href="/pages/InternshipPage/Subpage">Internship</Link></button>
         <p>|</p>
         <button className="hover:text-rose-300 text-xl">
           <Link href="/pages/EngineeringPage">Engineering</Link>
