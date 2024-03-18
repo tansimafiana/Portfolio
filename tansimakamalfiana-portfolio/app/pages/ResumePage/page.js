@@ -101,7 +101,7 @@ export default function ResumePage() {
             <div className="">
               <div className="w-full flex justify-space mx-auto">
                 <h3 className="mr-auto justify-start text-2xl font-normal">Capstone Project</h3>
-                <h3 className="ml-auto pr-4">01/23 - 04/23</h3>
+                <h3 className="ml-auto pr-4">01/24 - 04/24</h3>
               </div>
               <div className="w-full flex justify-space mx-auto">
                 <h3 className="mr-auto pr-4 italic"> TailwindCSS, React.JS, Next.JS, Node.JS, Firebase</h3>
