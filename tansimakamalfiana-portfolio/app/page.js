@@ -36,7 +36,7 @@ export default function Home() {
 
           <div className="flex-col justify-center ">
             <h1 className={size.width < 1000 ? " text-4xl py-4 px-8 text-center font-extrabold" : " text-6xl py-4 px-8 text-center font-extrabold"}>Tansima Kamal Fiana</h1>
-            <h3 className={size.width < 1000 ? " text-xl px-8 flex justify-center text-center font-poppinsThin" : " text-4xl px-8 flex justify-center text-center font-poppinsThin"}>Hi, I'm Fiona! I'm a recent graduate with a passion for Web Development, UX/UI design, Project planning, and Software Development.</h3>
+            <h3 className={size.width < 1000 ? " text-xl px-8 flex justify-center text-center font-poppinsThin" : " text-4xl px-8 flex justify-center text-center font-poppinsThin"}>Hi, I&apos;m Fiona! I&apos;m a recent graduate with a passion for Web Development, UX/UI design, Project planning, and Software Development.</h3>
             
             <div className="flex w-full justify-evenly m-auto py-8 px-24">
               <Buttons text="PORTFOLIO" href="../pages/PortfolioPage"/>

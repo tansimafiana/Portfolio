@@ -1,11 +1,8 @@
 "use client"
 
-import Image from "next/image";
 import FionaIcon from "@/app/components/FionaIcon"
-import GitHubIcon from "@/app/components/GitHubIcon"
 import LinkedInIcon from "@/app/components/LinkedInIcon"
 import MailIcon from "@/app/components/MailIcon"
-import Buttons from "@/app/components/Buttons"
 
 import Navigation from "@/app/navigation/page"
 import { IoMdHome } from "react-icons/io";
@@ -32,7 +29,7 @@ export default function ContactPage() {
           </div>
 
           <div className="flex-col justify-center ">
-            <h1 className=" text-6xl py-4 px-8 text-center font-extrabold">Hello! Let's Connect?</h1>
+            <h1 className=" text-6xl py-4 px-8 text-center font-extrabold">Hello! Let&apos;s Connect?</h1>
             
 
             <div className="px-24 mt-6 flex-col flex">

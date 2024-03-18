@@ -38,7 +38,7 @@ export default function InternshipSubpage() {
           {/* Slide 1 */}
           <div className="flex flex-col pt-20 w-full">
             <h2 className="text-3xl text-center pb-6">Introduction</h2>
-            <p>Hello, I'm Tansima Kamal Fiana, currently studying in my last semester of Software Development at SAIT. As part of my internship, I developed an application called "Pause and Reflect" using the Cyferd platform. Cyferd is a digital transformation platform.</p>
+            <p>Hello, I&apos;m Tansima Kamal Fiana, currently studying in my last semester of Software Development at SAIT. As part of my internship, I developed an application called Pause and Reflect using the Cyferd platform. Cyferd is a digital transformation platform.</p>
           </div>
 
           {/* Slide 2 */}
@@ -87,7 +87,7 @@ export default function InternshipSubpage() {
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Self Reflection</h2>
             <p>Despite being new to the Cyferd platform, I created an app with ease, learning JSON and developing skills in coding, problem-solving, front-end development, and communication.</p>
-            <p>I improved the user interface and added more functionality, such as new features and integrations with other systems, to enhance the app's usability and visual appeal.</p>            
+            <p>I improved the user interface and added more functionality, such as new features and integrations with other systems, to enhance the app&apos;s usability and visual appeal.</p>            
           </div>
 
           {/* Slide 7 */}

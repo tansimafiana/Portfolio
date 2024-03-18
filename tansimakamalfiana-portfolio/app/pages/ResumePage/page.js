@@ -46,7 +46,7 @@ export default function ResumePage() {
               <ul className="mt-4 space-y-1">
 
                 <li>• Collaborated with the solution expert of Cyferd to develop an innovative mental health application using Cyferd technology, implementing JSON coding</li>
-                <li>• Crafted PowerPoint presentations showcasing application's front-end features, boosting user satisfaction</li>
+                <li>• Crafted PowerPoint presentations showcasing application&apos;s front-end features, boosting user satisfaction</li>
                 <li>• Achieved recognition as a Certified Cyferd Modeller for exceptional contributions to project development and implementation</li>
                 <li>• Utilized engineering principles to drive innovation and collaboration, supporting business objectives in a dynamic team setting</li>
                 <li>• Applied Lean principles and process optimization, achieving a 15% reduction in production cycle time and a 20% increase in operational efficiency</li>
@@ -79,7 +79,7 @@ export default function ResumePage() {
               </div>
               <ul className="mt-4 space-y-1">
                 <li>• Input financial data, including transactions, invoices, receipts, and payment details using Excel</li>
-                <li>• Enter and categorize expenses, which helps in tracking and managing the company’s spending. Did proper categorization to ensure accurate financial reporting</li>
+                <li>• Enter and categorize expenses, which helps in tracking and managing the company spending. Did proper categorization to ensure accurate financial reporting</li>
                 <li>• Accuracy, attention to detail, and adherence to financial regulations</li>
               </ul>
             </div>
