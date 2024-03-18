@@ -56,7 +56,7 @@ export default function ResumePage() {
                 <li>• Utilized engineering principles to drive innovation and collaboration, supporting business objectives in a dynamic team setting</li>
                 <li>• Applied Lean principles and process optimization, achieving a 15% reduction in production cycle time and a 20% increase in operational efficiency</li>
 
-                <li>• References: <a className="hover:bg-rose-300" href="mailto:haider.al-seaidy@cyferd.com">haider.al-seaidy@cyferd.com</a> </li>
+                <li>• Reference: <a className="hover:bg-rose-300" href="mailto:haider.al-seaidy@cyferd.com">haider.al-seaidy@cyferd.com</a> </li>
               </ul>
             </div>
 
@@ -64,7 +64,7 @@ export default function ResumePage() {
             <div className="mt-6">
             <div className="w-full flex justify-space mx-auto">
                 <h3 className="mr-auto justify-start text-2xl font-normal">IT Volunteering Support Specialist </h3>
-                <h3 className="ml-auto pr-4">01/23 - Present</h3>
+                <h3 className="ml-auto pr-4">01/22 - 06/22</h3>
               </div>
               <div className="w-full flex justify-space mx-auto">
                 <h3 className="ml-auto pr-4 italic">Saudi Arabia, Jeddah</h3>

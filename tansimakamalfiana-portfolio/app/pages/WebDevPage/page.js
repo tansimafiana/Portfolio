@@ -22,144 +22,123 @@ export default function WebDevPage() {
 
   return (
     <main className="bg-rose-100 text-black my-auto flex-col flex flex-wrap ">
-      <Navigation />
-
-      {/* DEBUG
-        <div>
-          {size.width}px / {size.height}px
-        </div>*/}
+      <Navigation subpage={false} />
 
       <div className="w-screen bg-pink-50 flex-col pb-12">
-        <h1 className=" mx-auto justify-center flex py-4 text-6xl">RESUME</h1>
 
-        {/* Double-sided pane */}
-        <div className={size.width < 1280 ? slimWindowClass[0] : stretchedWindowClass[0]}>
-          {/* First Side */}
-          <div className={size.width < 1280 ? slimWindowClass[1] : stretchedWindowClass[1]}>
-            <h2 className=" text-4xl pb-12 font-normal">Experience</h2>
-
-            {/* Experience Field */}
-            <div className="">
-            <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">Cyferd | Internship </h3>
-                <h3 className="ml-auto pr-4">01/23 - 04/23</h3>
-              </div>
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
-              </div>
-              <ul className="mt-4">
-                <li>• Collaborated with the solution expert of Cyferd to develop an innovative mental health application using Cyferd technology, implementing JSON coding</li>
-                <li>• Crafted PowerPoint presentations showcasing application's front-end features, boosting user satisfaction</li>
-                <li>• Achieved recognition as a Certified Cyferd Modeller for exceptional contributions to project development and implementation</li>
-                <li>• Utilized engineering principles to drive innovation and collaboration, supporting business objectives in a dynamic team setting</li>
-                <li>• Applied Lean principles and process optimization, achieving a 15% reduction in production cycle time and a 20% increase in operational efficiency</li>
-                <li>• References: <a className="underline" href="mailto:haider.al-seaidy@cyferd.com">haider.al-seaidy@cyferd.com</a> and <a href="mailto:bailey.carlson@cyferd.com" className="underline">bailey.carlson@cyferd.com</a></li>
-              </ul>
-            </div>
-
-            {/* IT Volunteering */}
-            <div className="mt-6">
-            <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">IT Volunteering Support Specialist </h3>
-                <h3 className="ml-auto pr-4">01/23 - Present</h3>
-              </div>
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="ml-auto pr-4 italic">Saudi Arabia, Jeddah</h3>
-              </div>
-              <ul className="mt-4">
-                <li>• Resolved campus computer issues for 100+ users</li>
-              </ul>
-            </div>
-
-            <div className="mt-6">
-            <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">Data Entry | Freelance</h3>
-                <h3 className="ml-auto pr-4">04/23 - Present</h3>
-              </div>
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
-              </div>
-              <ul className="mt-4">
-                <li>• Input financial data, including transactions, invoices, receipts, and payment details using Excel</li>
-                <li>• Enter and categorize expenses, which helps in tracking and managing the company’s spending. Did proper categorization to ensure accurate financial reporting</li>
-                <li>• Accuracy, attention to detail, and adherence to financial regulations</li>
-              </ul>
-            </div>
-
-            <div className="mt-6">
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">Team Lead | The Body Shop</h3>
-                <h3 className="ml-auto pr-4">01/23 - 02/24</h3>
-              </div>
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
-              </div>
-              <ul className="mt-4">
-                <li>• Produced financial reports detailing cost breakdowns and profitability analysis, supporting strategic decision-making for the body shop department, highlighting strong analytical skills, business acumen, and customer service skills</li>
-              </ul>
-            </div>
-
-            <h2 className=" text-4xl pb-12 mt-10">Projects</h2>
-            <div className="">
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">Capstone Project</h3>
-                <h3 className="ml-auto pr-4">01/23 - 04/23</h3>
-              </div>
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto pr-4 italic"> TailwindCSS, React.JS, Next.JS, Node.JS, Firebase</h3>
-                <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
-              </div>
-              <ul className="mt-4">
-                <li>• Led Capstone team to develop dynamic cat breeding website</li>
-                <li>• Utilized React.js, Next.js, Node.js for scalability and front end, Firebase for real-time database</li>
-                <li>• Leveraged Visual Studio Code for coding, debugging, and Git/GitHub version control, achieving a boost in code quality and deployment efficiency</li>
-                <li>• Employed UML diagrams for system architecture, following agile and scrum methodologies</li>
-                <li>• Designed and developed an admin dashboard using React.js; streamlined management of 50+ cat breeds, 100 cats, and interactive site content, focusing in a increase in user satisfaction, and site content</li>
-                <li>• Implemented Tailwind CSS for rapid UI prototyping and responsive design</li>
-              </ul>
-            </div>
+        
+        <div className="w-10/12 h-full flex flex-col justify-center items-center mx-auto font-light">
+          {/* Logo */}
+          <div className="flex pt-12">
+            <Image className="pt-2" src="/Home - Logged Out.png" height="300" width="300" />
+            <h1 className=" text-5xl pt-2 text-[#1a1a53]">| Capstone</h1>
           </div>
 
-          {/* Second Side */}
-          <div className={size.width < 1280 ? slimWindowClass[2] : stretchedWindowClass[2]}>
-            <h2 className=" text-4xl pb-12 font-normal">Education</h2>
-
-            <div className="w-full flex justify-space mx-auto">
-              <h3 className="mr-1  justify-start text-2xl font-normal">Southern Alberta <br/>Institute of Technology</h3>
-              <h3 className=" ml-auto text-nowrap pr-4">09/22 - 04/24</h3>
-            </div>
-            <div className="w-full flex justify-space mx-auto">
-              <h3 className="mr-auto pr-4">Diploma in Software Development - Global Campus Scholarship Award</h3>
-              <h3 className="ml-auto pr-4 text-nowrap text-right">Calgary, AB</h3>
-            </div>
-
-            <h2 className=" text-4xl mt-8 font-normal">Skills</h2>
-            <div>
-              <h3 className=" text-2xl mt-4 font-normal">Languages</h3>
-              <p>Python, C-Sharp, SQL, Node.js, React Native, Next.js, XML, JavaScript, HTML5/CSS, JSON, Gradle</p>
-            </div>
-            <div>
-              <h3 className=" text-2xl mt-4 font-normal">Frameworks</h3>
-              <p>React Native, Next.js, Node.js, Flask, FastAPI, .NET Framework, XNA Framework</p>
-            </div>
-            <div>
-              <h3 className=" text-2xl mt-4 font-normal">Developer Tools</h3>
-              <p>Git, VS Code, Visual Studio, Figma, MySQL, Oracle, SQLite, ASP.NET Core, Android Studio</p>
-            </div>
-            <div>
-              <h3 className=" text-2xl mt-4 font-normal">Skills</h3>
-              <p>AutoCad, Use Cases, Test cases/scripts, Agile Methodologies, Emerging technologies, Software Development Life
-Cycle, Requirements Gathering, Application Development, Microsoft Office, MS Project, Debugging, Quality Assurance, Prototyping, Documentation, Programming, Business
-Requirements, Software Troubleshooting, Technical Analysis, Data Analysis, Resource Management, Project
-Management, Lean principles, Engineering principles, Stakeholder Management, Cost Analysis, Economic principles, Defect Management</p>
-            </div>
-            <div>
-              <h3 className=" text-2xl mt-4 font-normal">Suitability</h3>
-              <p>Time Management, Problem-solving, Interpersonal skills, Communication, Written Communication,
-Collaborative, Organized, Team player, Flexibility, Analytical, Presentation, Customer Reporting tools, Key Performance
-Indicators, Financial Reporting, Customer service</p>
-            </div>
+          {/* Slide 1 */}
+          <div className="flex flex-col pt-20 w-full">
+            <h2 className="text-3xl text-center pb-6">Introduction</h2>
+            <p>Hello, my name is Tansima Kamal Fiana, and I am studying Software Development at Southern Alberta Institute of Technology. I am currently working on my capstone project for my final semester, and I would like to showcase it here in my portfolio.</p>
           </div>
+
+          {/* Slide 2 */}
+          <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center">Overview</h2>
+            <p>Project Identification: Team Ultimate aims to develop an application for Diamond Valley Cattery, hereafter referred to as the client, to streamline the management of their cat breeding business. Currently, the client lacks a system to effectively manage their operations, providing an opportunity for our team to build a comprehensive solution from scratch.</p>
+            <p>Proposed Solution: Team Ultimate proposes the development of a web application with an integrated database to facilitate the client's needs. The application will enable efficient data entry, maintenance, and display of information related to cats available for sale. This includes details such as appearance, medical history, lineage, and more. Additionally, the web app will feature a customer-facing interface, allowing potential adopters to browse a catalogue of cats and schedule appointments seamlessly.</p>
+            
+          </div>
+
+          {/* Slide 3 */}
+          <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center">Tech Stack</h2>
+            <p>React.js: React.js serves as the primary front-end framework for building the web application's user interface. Its component-based architecture and virtual DOM enable efficient development and management of dynamic user interfaces.</p>
+            <p>Tailwind CSS: Tailwind CSS is used for styling the application. Its utility-first approach allows for rapid styling and customization, ensuring a visually appealing and responsive design.</p>
+            <p>Firebase: Firebase provides the backend services for this project, offering features such as authentication, real-time database, and cloud storage. Its seamless integration with React.js simplifies the development process and enables rapid prototyping.</p>
+            <p>JSON: JSON (JavaScript Object Notation) is used for data interchange between the front-end and backend components of the application. It offers a lightweight and human-readable format for storing and transmitting structured data.</p>
+         <p>Figma: Figma is employed for designing and prototyping the user interface of the web application. Its collaborative features and versatile design tools facilitate effective communication and iteration within the project team.</p>
+          </div>
+
+         
+
+          {/* Slide 4 */}
+          <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center"> Features</h2>
+            <p>Messaging System: Users can communicate with the admin through an integrated messaging system. This feature facilitates seamless interaction and support between stakeholders.</p>
+            
+            <p>Authentication: Authentication mechanisms are implemented to ensure that authorized users can access the application. This feature enhances the security of the platform and protects sensitive information.</p>
+            <p>Comments System: A comments system allows users to provide feedback, ask questions, or engage in discussions related to cats, litters, or any other relevant topics. This feature promotes community engagement and fosters a sense of community within the platform..</p>
+            
+            <p>User Dashboard: Each user has access to a personalized dashboard where they can view relevant information, such as their profile details, messages, notifications, and any other personalized content. This feature provides users with a centralized hub for managing their interactions and activities within the application.</p>
+            <p>Cats Page: The cats page serves as a catalog where users can browse through available cats for adoption. Detailed information about each cat is provided to help users make informed decisions.</p>
+            <p>Litters Page: The litters page showcases information about current litters, including details such as the parent cats, birth dates, and available kittens. Users can explore this page to learn more about upcoming litters or to inquire about adopting kittens.</p>
+            <p>Carousel Images: A carousel of images is integrated into the application to showcase visually appealing content, such as photos of cats, litters, or special announcements. This feature adds visual interest to the platform and enhances the overall user experience.</p>
+            
+          </div>
+
+
+            {/* Slide 5 */}
+          <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center">DIAGRAMS</h2>
+            <h3 className="text-2xl">Use Case:</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Usecasediagram1.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">Class Diagram:</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/ClassDiagram.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">Entity Relationship Diagram:</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Entityrelationshipdiagram1.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">State Machine Diagram:</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Statemachinediagram2.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">Activity Diagram (AddNewCat):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/ActivityDiagramBreederAddNewCat.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">Activity Diagram (Purchase Cat):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/ActivityDiagramCustomerPurchaseCatUpdated.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+          </div>
+
+
+
+          
+            {/* Slide 5 */}
+            <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center">PROTOTYPE</h2>
+            <h3 className="text-2xl">HomePage (Logged Out):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Home -Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">Cat List (Logged Out):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Cats List - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">Cat List (Logged In - Breeder):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Cats List - Logged In (Breeder).png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl"> Cat (Logged Out): </h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Cat - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">Litter List (Logged Out):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Litters List - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">Litter (Logged Out):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Litter - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">Chat Portal (Logged In):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/Chat Portal - Logged In.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h3 className="text-2xl">User Page (Logged In):</h3>
+            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image className="justify-center flex" src="/User Page - Logged In.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+
+
+          </div>
+
+
+
+           {/* Slide 6 */}
+           <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center">Demo</h2>
+            <p>UNDER CONSTRUCTION</p>
+                        
+          </div>
+
+
+          {/* Slide 7 */}
+          <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center">Self Reflection</h2>
+            <p>The capstone project for my portfolio is an enriching journey, offering opportunities for growth and learning. Working within a team, I hone communication and collaboration skills. Applying theoretical knowledge to real-world scenarios strengthens my understanding of software development principles. Overcoming technical challenges boosts problem-solving abilities. This project serves as a platform for personal and professional growth, enhancing my skills and credibility as a software developer.</p>
+                        
+          </div>
+
+          
+
+         
         </div>
       </div>
     </main>
