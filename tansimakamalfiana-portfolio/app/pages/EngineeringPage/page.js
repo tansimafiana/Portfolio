@@ -30,7 +30,7 @@ export default function ResumePage() {
         </div>*/}
 
       <div className="w-screen h-screen bg-pink-50 flex-col pb-12">
-        <h1 className=" mx-auto justify-center align-middle flex py-4 text-6xl">👷🏻‍♀️ UNDER CONSTRUCTION 👷🏻‍♀️</h1>
+        <h1 className=" mx-auto justify-center align-middle flex py-4 text-6xl">👷‍♀️ UNDER CONSTRUCTION 👷‍♀️</h1>
 
       </div>
     </main>

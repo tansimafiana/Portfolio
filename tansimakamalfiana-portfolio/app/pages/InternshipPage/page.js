@@ -31,7 +31,7 @@ export default function InternshipSubpage() {
         <div className="w-10/12 h-full flex flex-col justify-center items-center mx-auto font-light">
           {/* Logo */}
           <div className="flex pt-12">
-            <Image src="/Cyferd.png" height="300" width="300" />
+            <Image src="/Cyferd.png" height="300" width={size.width ? (size.width / 4 > 300 ? 300 : size.width / 4) : 300} />
             <h1 className=" text-5xl pt-2 text-[#1a1a53]">| Internship</h1>
           </div>
 

@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import FionaIcon from "@/app/components/FionaIcon"
 import GitHubIcon from "@/app/components/GitHubIcon"
@@ -8,8 +10,11 @@ import Buttons from "@/app/components/Buttons"
 import Navigation from "@/app/navigation/page"
 import { IoMdHome } from "react-icons/io";
 
+import { useState, useEffect } from "react"
 
 export default function ContactPage() {
+  const size = useWindowSize()
+  
   return (
 <main className="w-screen h-screen bg-rose-100 flex-col text-black">
       
@@ -40,7 +45,7 @@ export default function ContactPage() {
                     <button className="w-fit">
                         <a target="_blank" href="https://www.linkedin.com/in/tansima-kamal-fiana" className="flex hover:text-rose-300 hover:scale-110 transform transition duration-300">
                             <div className="mt-2 pr-4"><LinkedInIcon /></div>
-                            <p className=" text-lg p-2">Connect with me on LinkedIn</p>
+                            <p className={size.width < 800 ? " text-sm p-2" : " text-lg p-2"}>Connect with me on LinkedIn</p>
                         </a>
                     </button>
             </div>      
@@ -52,4 +57,35 @@ export default function ContactPage() {
            
     
   );
+}
+
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+     
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
 }
