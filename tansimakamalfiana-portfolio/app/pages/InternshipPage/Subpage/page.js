@@ -22,7 +22,7 @@ export default function InternshipSubpage() {
 
   return (
     <main className="bg-rose-100 text-black my-auto flex-col flex flex-wrap ">
-      <Navigation />
+      <Navigation subpage={true} />
 
       <div className="w-screen bg-pink-50 flex-col pb-12">
 
