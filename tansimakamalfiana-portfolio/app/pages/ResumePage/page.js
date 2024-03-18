@@ -1,17 +1,13 @@
 "use client"
 
-import Image from "next/image";
-import FionaIcon from "@/app/components/FionaIcon"
-import GitHubIcon from "@/app/components/GitHubIcon"
-import LinkedInIcon from "@/app/components/LinkedInIcon"
-import Buttons from "@/app/components/Buttons"
-import { IoMdHome } from "react-icons/io";
+import BackButton from "@/app/components/BackToTopButton"
 
 import Navigation from "@/app/navigation/page"
 import { useState, useEffect } from "react"
 
 export default function ResumePage() {
-  const size = useWindowSize()
+  const size = useWindowSize();
+  const scrollY = useScroll();
 
   const stretchedWindowClass = ["w-10/12 h-full flex justify-center mx-auto font-light",
                                 "h-full",
@@ -23,20 +19,19 @@ export default function ResumePage() {
   return (
     <main className="bg-rose-100 text-black my-auto flex-col flex flex-wrap ">
       <Navigation />
-
-      {/* DEBUG
-        <div>
-          {size.width}px / {size.height}px
-        </div>*/}
+      { scrollY > 500 &&
+      <div className={"transition duration-500 opacity-100"}>
+        <BackButton url="#Navbar" />
+      </div>}
 
       <div className="w-screen bg-pink-50 flex-col pb-12">
-        <h1 className=" mx-auto justify-center flex py-4 text-4xl">RESUME</h1>
+        <h1 className=" mx-auto justify-center flex py-4 mb-12 text-4xl">RESUME</h1>
 
         {/* Double-sided pane */}
         <div className={size.width < 1280 ? slimWindowClass[0] : stretchedWindowClass[0]}>
           {/* First Side */}
           <div className={size.width < 1280 ? slimWindowClass[1] : stretchedWindowClass[1]}>
-            <h2 className=" text-3xl pb-12 font-normal">Experience</h2>
+            <h2 className=" text-3xl pb-12 font-normal">🌸 <span className="ml-6">Experience</span></h2>
 
             {/* Experience Field */}
             <div className="">
@@ -102,7 +97,7 @@ export default function ResumePage() {
               </ul>
             </div>
 
-            <h2 className=" text-3xl pb-12 mt-10">Projects</h2>
+            <h2 className=" text-3xl pb-12 mt-10">🌸 <span className="ml-6">Projects</span></h2>
             <div className="">
               <div className="w-full flex justify-space mx-auto">
                 <h3 className="mr-auto justify-start text-2xl font-normal">Capstone Project</h3>
@@ -125,7 +120,7 @@ export default function ResumePage() {
 
           {/* Second Side */}
           <div className={size.width < 1280 ? slimWindowClass[2] : stretchedWindowClass[2]}>
-            <h2 className=" text-3xl pb-12 font-normal">Education</h2>
+            <h2 className=" text-3xl pb-12 font-normal">🌸 <span className="ml-6">Education</span></h2>
 
             <div className="w-full flex justify-space mx-auto">
               <h3 className="mr-1  justify-start text-2xl font-normal">Southern Alberta <br/>Institute of Technology</h3>
@@ -136,7 +131,7 @@ export default function ResumePage() {
               <h3 className="ml-auto pr-4 text-nowrap text-right">Calgary, AB</h3>
             </div>
 
-            <h2 className=" text-3xl mt-8 font-normal">Skills</h2>
+            <h2 className=" text-3xl mt-8 font-normal">🌸 <span className="ml-6">Skills</span></h2>
             <div>
               <h3 className=" text-2xl mt-4 font-normal">Languages</h3>
               <p>Python, C-Sharp, SQL, Node.js, React Native, Next.js, XML, JavaScript, HTML5/CSS, JSON, Gradle</p>
@@ -198,4 +193,26 @@ function useWindowSize() {
     return () => window.removeEventListener("resize", handleResize);
   }, []); // Empty array ensures that effect is only run on mount
   return windowSize;
+}
+
+function useScroll() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    
+    // Add event listener
+    window.addEventListener("scroll", handleScroll);
+     
+    // Call handler right away so state gets updated with initial window size
+    handleScroll();
+    
+    // Remove event listener on cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+    }, []); // Empty array ensures that effect is only run on mount
+  return scrollY;
 }

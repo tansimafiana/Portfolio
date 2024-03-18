@@ -1,17 +1,14 @@
 "use client"
 
 import Image from "next/image";
-import FionaIcon from "@/app/components/FionaIcon"
-import GitHubIcon from "@/app/components/GitHubIcon"
-import LinkedInIcon from "@/app/components/LinkedInIcon"
-import Buttons from "@/app/components/Buttons"
-import { IoMdHome } from "react-icons/io";
+import BackButton from "@/app/components/BackToTopButton"
 
 import Navigation from "@/app/navigation/page"
 import { useState, useEffect } from "react"
 
 export default function InternshipSubpage() {
   const size = useWindowSize()
+  const scrollY = useScroll();
 
   const stretchedWindowClass = ["w-10/12 h-full flex justify-center mx-auto font-light",
                                 "h-full",
@@ -23,6 +20,10 @@ export default function InternshipSubpage() {
   return (
     <main className="bg-rose-100 text-black my-auto flex-col flex flex-wrap ">
       <Navigation subpage={false} />
+      { scrollY > 500 &&
+      <div className={"transition duration-500 opacity-100"}>
+        <BackButton url="#Navbar" />
+      </div>}
 
       <div className="w-screen bg-pink-50 flex-col pb-12">
 
@@ -135,4 +136,26 @@ function useWindowSize() {
     return () => window.removeEventListener("resize", handleResize);
   }, []); // Empty array ensures that effect is only run on mount
   return windowSize;
+}
+
+function useScroll() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    
+    // Add event listener
+    window.addEventListener("scroll", handleScroll);
+     
+    // Call handler right away so state gets updated with initial window size
+    handleScroll();
+    
+    // Remove event listener on cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+    }, []); // Empty array ensures that effect is only run on mount
+  return scrollY;
 }
