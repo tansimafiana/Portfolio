@@ -218,7 +218,7 @@ With this powerful tech stack, I&apos;ve created a platform that not only showca
           {/* Slide 4 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center"> Features</h2>
-            <p>Embark on a journey through my portfolio, where every detail is crafted to enhance your experience. Here are some of the standout features awaiting your exploration:
+           
 
  <p>🌸 Back to Top Button: Never lose your place in the creative landscape with the convenient &apos;Back to Top&apos; button. Effortlessly navigate through my portfolio and return to the beginning with just a click, ensuring seamless browsing from start to finish.</p>
 
