@@ -76,8 +76,8 @@ storage systems.</p>
           {/* Slide 7 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center"> Review 1</h2>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srsl" className="justify-center flex" src="/lofip.JPEG" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs2" className="justify-center flex" src="/lofip2.JPEG" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srsl" className="justify-center flex" src="/lofip.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs2" className="justify-center flex" src="/lofip2.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
           </div>
 
 
