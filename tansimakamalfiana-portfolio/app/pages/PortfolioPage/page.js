@@ -22,7 +22,7 @@ export default function ContactPage() {
           <Link href="/pages/InternshipPage">Internship</Link></button>
         <p>|</p>
         <button className="hover:text-rose-300 text-xl">
-          <Link href="/pages/EngineeringPage">Engineering</Link>
+          <Link href="/pages/EngineeringPage">Engineering UX</Link>
         </button>
         
         

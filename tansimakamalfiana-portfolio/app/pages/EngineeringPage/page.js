@@ -6,12 +6,13 @@ import GitHubIcon from "@/app/components/GitHubIcon"
 import LinkedInIcon from "@/app/components/LinkedInIcon"
 import Buttons from "@/app/components/Buttons"
 import { IoMdHome } from "react-icons/io";
+import BackButton from "@/app/components/BackToTopButton"
 
 import Navigation from "@/app/navigation/page"
 import { useState, useEffect } from "react"
 
 export default function EngineeringPage() {
-  const size = useWindowSize()
+  const scrollY = useScroll();
 
   const stretchedWindowClass = ["w-10/12 h-full flex justify-center mx-auto font-light",
                                 "h-full",
@@ -23,6 +24,10 @@ export default function EngineeringPage() {
   return (
     <main className="bg-rose-100 text-black my-auto flex-col flex flex-wrap ">
       <Navigation subpage={false} />
+      { scrollY > 500 &&
+      <div className={"transition duration-500 opacity-100"}>
+        <BackButton url="#Navbar" />
+      </div>}
 
 
       <div className="w-screen bg-pink-50 flex-col pb-12">
@@ -80,6 +85,8 @@ storage systems.</p>
               <div className="flex w-8/12 mx-auto"><Image alt="srsl" className="justify-center flex" src="/lofip.JPEG" height="1080" width="1920" style={{objectFit: 'fit', position: 'relative'}} /></div>
               <div className="flex w-3/12 mx-auto"><Image alt="srs2" className="justify-center flex" src="/lofip2.JPEG" height="1080" width="1920" style={{objectFit: 'fit', position: 'relative'}} /></div>
             </div>
+            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srsl" className="justify-center flex" src="/lofip.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs2" className="justify-center flex" src="/lofip2.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
           </div>
 
 
@@ -93,7 +100,6 @@ storage systems.</p>
               <div className="flex justify-center w-full mx-auto"><Image alt="srs5" className="justify-center flex" src="/HMI 11_ - Auto Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
               <div className="flex justify-center w-full mx-auto"><Image alt="srs6" className="justify-center flex" src="/HMI 11_ - Manual Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
             </div>
-          </div>
 
  {/* Slide 6 */}
  <div className="flex flex-col pt-20 w-full space-y-6">
@@ -107,33 +113,24 @@ storage systems.</p>
   );
 }
 
-function useWindowSize() {
-  // Initialize state with undefined width/height so server and client renders match
-  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
-  const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
-  });
+function useScroll() {
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    // only execute all the code below in client side
-    // Handler to call on window resize
-    function handleResize() {
-      // Set window width/height to state
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
     
     // Add event listener
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
      
     // Call handler right away so state gets updated with initial window size
-    handleResize();
+    handleScroll();
     
     // Remove event listener on cleanup
-    return () => window.removeEventListener("resize", handleResize);
-  }, []); // Empty array ensures that effect is only run on mount
-  return windowSize;
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+    }, []); // Empty array ensures that effect is only run on mount
+  return scrollY;
 }
