@@ -147,9 +147,9 @@ export default function ResumePage() {
             <div>
               <h3 className=" text-2xl mt-4 font-normal">Skills</h3>
               <p>Use Cases, Test cases/scripts, Agile Methodologies, Emerging technologies, Software Development Life
-Cycle, Requirements Gathering, Application Development, Microsoft Office, MS Project, Debugging, Quality Assurance, Prototyping, Documentation, Programming, Business
+Cycle, Requirements Gathering, Application Development, Microsoft Office, Debugging, QA, Prototyping, Documentation, Business
 Requirements, Software Troubleshooting, Technical Analysis, Resource Management, Project
-Management, Lean principles, Engineering principles, Stakeholder Management, Cost Analysis, Economic principles, Defect Management</p>
+Management, Engineering principles, Stakeholder Management, Cost Analysis, Economic principles, Defect Management</p>
             </div>
             <div>
               <h3 className=" text-2xl mt-4 font-normal">Suitability</h3>
