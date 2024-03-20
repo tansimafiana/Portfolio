@@ -1,23 +1,19 @@
+"use client"
+
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
+import Image from "next/image";
+import Link from "next/link";
+import { useState, useEffect } from "react";
 import 'react-slideshow-image/dist/styles.css';
 //import './styles.css';
 
-const Slideshow = () => {
+const Slideshow = ({slideData}) => {
+  const size = useWindowSize();
 
     const slideImages = [
-        {
-          url: 'https://st3.depositphotos.com/3591429/18431/i/450/depositphotos_184311644-stock-photo-white-background-template-copy-space.jpg',
-          caption: 'Slide 1'
-        },
-        {
-          url: 'https://st3.depositphotos.com/3591429/18431/i/450/depositphotos_184311644-stock-photo-white-background-template-copy-space.jpg',
-          caption: 'Slide 2'
-        },
-        {
-          url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
-          caption: 'Slide 3'
-        },
+      { src: "/Landscape.png"},
+      { src: "/FionaPFP.jpg"},
       ];
 
       const spanStyle = {
@@ -36,17 +32,46 @@ const Slideshow = () => {
 
     return (
         <div className="slide-container">
-        <Slide autoplay={false}>
-         {slideImages.map((slideImage, index)=> (
-            <div key={index}>
-              <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
-                <button style={spanStyle}>{slideImage.caption}</button>
-              </div>
+        <Slide autoplay={false} transitionDuration={800}>
+         {slideData && slideData.map((slide, index)=> (
+            <div className="h-full justify-center" key={index}>
+              {slide}
             </div>
           ))} 
         </Slide>
       </div>
     );
 };
+
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+     
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
+}
 
 export default Slideshow;
