@@ -1,17 +1,14 @@
 "use client"
 
 import Image from "next/image";
-import FionaIcon from "@/app/components/FionaIcon"
-import GitHubIcon from "@/app/components/GitHubIcon"
-import LinkedInIcon from "@/app/components/LinkedInIcon"
-import Buttons from "@/app/components/Buttons"
-import { IoMdHome } from "react-icons/io";
+import BackButton from "@/app/components/BackToTopButton"
 
 import Navigation from "@/app/navigation/page"
 import { useState, useEffect } from "react"
 
 export default function InternshipSubpage() {
   const size = useWindowSize()
+  const scrollY = useScroll();
 
   const stretchedWindowClass = ["w-10/12 h-full flex justify-center mx-auto font-light",
                                 "h-full",
@@ -23,6 +20,10 @@ export default function InternshipSubpage() {
   return (
     <main className="bg-rose-100 text-black my-auto flex-col flex flex-wrap ">
       <Navigation subpage={false} />
+      { scrollY > 500 &&
+      <div className={"transition duration-500 opacity-100"}>
+        <BackButton url="#Navbar" />
+      </div>}
 
       <div className="w-screen bg-pink-50 flex-col pb-12">
 
@@ -30,14 +31,14 @@ export default function InternshipSubpage() {
         <div className="w-10/12 h-full flex flex-col justify-center items-center mx-auto font-light">
           {/* Logo */}
           <div className="flex pt-12">
-            <Image src="/Cyferd.png" height="300" width="300" />
+            <Image src="/Cyferd.png" height="300" width={size.width ? (size.width / 4 > 300 ? 300 : size.width / 4) : 300} />
             <h1 className=" text-5xl pt-2 text-[#1a1a53]">| Internship</h1>
           </div>
 
           {/* Slide 1 */}
           <div className="flex flex-col pt-20 w-full">
             <h2 className="text-3xl text-center pb-6">Introduction</h2>
-            <p>Hello, I'm Tansima Kamal Fiana, currently studying in my last semester of Software Development at SAIT. As part of my internship, I developed an application called "Pause and Reflect" using the Cyferd platform. Cyferd is a digital transformation platform.</p>
+            <p>Hello, I&apos;m Tansima Kamal Fiana, currently studying in my last semester of Software Development at SAIT. As part of my internship, I developed an application called Pause and Reflect using the Cyferd platform. Cyferd is a digital transformation platform.</p>
           </div>
 
           {/* Slide 2 */}
@@ -86,7 +87,7 @@ export default function InternshipSubpage() {
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Self Reflection</h2>
             <p>Despite being new to the Cyferd platform, I created an app with ease, learning JSON and developing skills in coding, problem-solving, front-end development, and communication.</p>
-            <p>I improved the user interface and added more functionality, such as new features and integrations with other systems, to enhance the app's usability and visual appeal.</p>            
+            <p>I improved the user interface and added more functionality, such as new features and integrations with other systems, to enhance the app&apos;s usability and visual appeal.</p>            
           </div>
 
           {/* Slide 7 */}
@@ -135,4 +136,26 @@ function useWindowSize() {
     return () => window.removeEventListener("resize", handleResize);
   }, []); // Empty array ensures that effect is only run on mount
   return windowSize;
+}
+
+function useScroll() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    
+    // Add event listener
+    window.addEventListener("scroll", handleScroll);
+     
+    // Call handler right away so state gets updated with initial window size
+    handleScroll();
+    
+    // Remove event listener on cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+    }, []); // Empty array ensures that effect is only run on mount
+  return scrollY;
 }

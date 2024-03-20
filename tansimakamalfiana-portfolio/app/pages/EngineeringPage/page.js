@@ -24,6 +24,7 @@ export default function EngineeringPage() {
     <main className="bg-rose-100 text-black my-auto flex-col flex flex-wrap ">
       <Navigation subpage={false} />
 
+
       <div className="w-screen bg-pink-50 flex-col pb-12">
 
         
@@ -96,8 +97,6 @@ storage systems.</p>
             
               <p>This collaborative journey has been both challenging and rewarding. Designing for something outside of my degree field proved to be both a challenge and a delight. It pushed me to think outside of my comfort zone and explore new concepts. Through teamwork and perseverance, we&apos;ve crafted a user-friendly interface that meets the needs of our project. As I continue to work on the remaining pages, I&apos;m excited to see the final product come together. Stay tuned for more updates on our progress!</p>       
           </div>
-
-
         </div>
       </div>
     </main>
