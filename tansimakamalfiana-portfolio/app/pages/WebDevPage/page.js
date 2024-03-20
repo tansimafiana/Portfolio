@@ -95,7 +95,7 @@ export default function WebDevPage() {
                 <h3 className="text-2xl">Class Diagram:</h3>
                 <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/ClassDiagram.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
               </div>
-            <div className="grid grid-cols-2 text-center gap-y-8 pt-4">
+            <div className={size.width < 900 ? "pt-4" : "grid grid-cols-2 text-center gap-y-8 pt-4"}>
               <div>
                 <h3 className="text-2xl">Entity Relationship Diagram:</h3>
                 <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Entityrelationshipdiagram1.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
@@ -118,7 +118,7 @@ export default function WebDevPage() {
           {/* Slide 5 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">PROTOTYPE</h2>
-            <div className="grid grid-cols-3 text-center gap-y-16">
+            <div className={ size.width < 900 ? " space-y-6" : "grid grid-cols-3 text-center gap-y-16"}>
               <div>
                 <h3 className="text-2xl">HomePage (Logged Out):</h3>
                 <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Home -Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
