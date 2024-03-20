@@ -6,6 +6,7 @@ import GitHubIcon from "@/app/components/GitHubIcon"
 import LinkedInIcon from "@/app/components/LinkedInIcon"
 import Buttons from "@/app/components/Buttons"
 import { IoMdHome } from "react-icons/io";
+import BackButton from "@/app/components/BackToTopButton"
 
 import Navigation from "@/app/navigation/page"
 import { useState, useEffect } from "react"
@@ -23,6 +24,7 @@ export default function EngineeringPage() {
   return (
     <main className="bg-rose-100 text-black my-auto flex-col flex flex-wrap ">
       <Navigation subpage={false} />
+      <BackButton />
 
 
       <div className="w-screen bg-pink-50 flex-col pb-12">
