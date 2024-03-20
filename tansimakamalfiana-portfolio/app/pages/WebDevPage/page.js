@@ -232,7 +232,7 @@ With this powerful tech stack, I&apos;ve created a platform that not only showca
 
 <p>🌸 Seamless Navigation: Navigate effortlessly through my portfolio with intuitive controls and smooth transitions. Whether you&apos;re scrolling through projects or toggling between tabs, seamless navigation ensures that nothing stands between you and the captivating content waiting to be discovered.</p>
 
-</p>
+
             
             
             
