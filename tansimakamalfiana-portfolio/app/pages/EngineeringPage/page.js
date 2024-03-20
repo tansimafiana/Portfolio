@@ -10,7 +10,7 @@ import { IoMdHome } from "react-icons/io";
 import Navigation from "@/app/navigation/page"
 import { useState, useEffect } from "react"
 
-export default function ResumePage() {
+export default function EngineeringPage() {
   const size = useWindowSize()
 
   const stretchedWindowClass = ["w-10/12 h-full flex justify-center mx-auto font-light",
@@ -22,144 +22,82 @@ export default function ResumePage() {
 
   return (
     <main className="bg-rose-100 text-black my-auto flex-col flex flex-wrap ">
-      <Navigation />
-
-      {/* DEBUG
-        <div>
-          {size.width}px / {size.height}px
-        </div>*/}
+      <Navigation subpage={false} />
 
       <div className="w-screen bg-pink-50 flex-col pb-12">
-        <h1 className=" mx-auto justify-center flex py-4 text-6xl">RESUME</h1>
 
-        {/* Double-sided pane */}
-        <div className={size.width < 1280 ? slimWindowClass[0] : stretchedWindowClass[0]}>
-          {/* First Side */}
-          <div className={size.width < 1280 ? slimWindowClass[1] : stretchedWindowClass[1]}>
-            <h2 className=" text-4xl pb-12 font-normal">Experience</h2>
-
-            {/* Experience Field */}
-            <div className="">
-            <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">Cyferd | Internship </h3>
-                <h3 className="ml-auto pr-4">01/23 - 04/23</h3>
-              </div>
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
-              </div>
-              <ul className="mt-4">
-                <li>• Collaborated with the solution expert of Cyferd to develop an innovative mental health application using Cyferd technology, implementing JSON coding</li>
-                <li>• Crafted PowerPoint presentations showcasing application's front-end features, boosting user satisfaction</li>
-                <li>• Achieved recognition as a Certified Cyferd Modeller for exceptional contributions to project development and implementation</li>
-                <li>• Utilized engineering principles to drive innovation and collaboration, supporting business objectives in a dynamic team setting</li>
-                <li>• Applied Lean principles and process optimization, achieving a 15% reduction in production cycle time and a 20% increase in operational efficiency</li>
-                <li>• References: <a className="underline" href="mailto:haider.al-seaidy@cyferd.com">haider.al-seaidy@cyferd.com</a> and <a href="mailto:bailey.carlson@cyferd.com" className="underline">bailey.carlson@cyferd.com</a></li>
-              </ul>
-            </div>
-
-            {/* IT Volunteering */}
-            <div className="mt-6">
-            <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">IT Volunteering Support Specialist </h3>
-                <h3 className="ml-auto pr-4">01/23 - Present</h3>
-              </div>
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="ml-auto pr-4 italic">Saudi Arabia, Jeddah</h3>
-              </div>
-              <ul className="mt-4">
-                <li>• Resolved campus computer issues for 100+ users</li>
-              </ul>
-            </div>
-
-            <div className="mt-6">
-            <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">Data Entry | Freelance</h3>
-                <h3 className="ml-auto pr-4">04/23 - Present</h3>
-              </div>
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
-              </div>
-              <ul className="mt-4">
-                <li>• Input financial data, including transactions, invoices, receipts, and payment details using Excel</li>
-                <li>• Enter and categorize expenses, which helps in tracking and managing the company’s spending. Did proper categorization to ensure accurate financial reporting</li>
-                <li>• Accuracy, attention to detail, and adherence to financial regulations</li>
-              </ul>
-            </div>
-
-            <div className="mt-6">
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">Team Lead | The Body Shop</h3>
-                <h3 className="ml-auto pr-4">01/23 - 02/24</h3>
-              </div>
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
-              </div>
-              <ul className="mt-4">
-                <li>• Produced financial reports detailing cost breakdowns and profitability analysis, supporting strategic decision-making for the body shop department, highlighting strong analytical skills, business acumen, and customer service skills</li>
-              </ul>
-            </div>
-
-            <h2 className=" text-4xl pb-12 mt-10">Projects</h2>
-            <div className="">
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">Capstone Project</h3>
-                <h3 className="ml-auto pr-4">01/23 - 04/23</h3>
-              </div>
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto pr-4 italic"> TailwindCSS, React.JS, Next.JS, Node.JS, Firebase</h3>
-                <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
-              </div>
-              <ul className="mt-4">
-                <li>• Led Capstone team to develop dynamic cat breeding website</li>
-                <li>• Utilized React.js, Next.js, Node.js for scalability and front end, Firebase for real-time database</li>
-                <li>• Leveraged Visual Studio Code for coding, debugging, and Git/GitHub version control, achieving a boost in code quality and deployment efficiency</li>
-                <li>• Employed UML diagrams for system architecture, following agile and scrum methodologies</li>
-                <li>• Designed and developed an admin dashboard using React.js; streamlined management of 50+ cat breeds, 100 cats, and interactive site content, focusing in a increase in user satisfaction, and site content</li>
-                <li>• Implemented Tailwind CSS for rapid UI prototyping and responsive design</li>
-              </ul>
-            </div>
+        
+        <div className="w-10/12 h-full flex flex-col justify-center items-center mx-auto font-light">
+          {/* Logo */}
+          <div className="flex pt-12">
+            
+            <h1 className=" text-5xl pt-2 text-[#1a1a53]">Automated Storage Retrieval System</h1>
           </div>
 
-          {/* Second Side */}
-          <div className={size.width < 1280 ? slimWindowClass[2] : stretchedWindowClass[2]}>
-            <h2 className=" text-4xl pb-12 font-normal">Education</h2>
-
-            <div className="w-full flex justify-space mx-auto">
-              <h3 className="mr-1  justify-start text-2xl font-normal">Southern Alberta <br/>Institute of Technology</h3>
-              <h3 className=" ml-auto text-nowrap pr-4">09/22 - 04/24</h3>
-            </div>
-            <div className="w-full flex justify-space mx-auto">
-              <h3 className="mr-auto pr-4">Diploma in Software Development - Global Campus Scholarship Award</h3>
-              <h3 className="ml-auto pr-4 text-nowrap text-right">Calgary, AB</h3>
-            </div>
-
-            <h2 className=" text-4xl mt-8 font-normal">Skills</h2>
-            <div>
-              <h3 className=" text-2xl mt-4 font-normal">Languages</h3>
-              <p>Python, C-Sharp, SQL, Node.js, React Native, Next.js, XML, JavaScript, HTML5/CSS, JSON, Gradle</p>
-            </div>
-            <div>
-              <h3 className=" text-2xl mt-4 font-normal">Frameworks</h3>
-              <p>React Native, Next.js, Node.js, Flask, FastAPI, .NET Framework, XNA Framework</p>
-            </div>
-            <div>
-              <h3 className=" text-2xl mt-4 font-normal">Developer Tools</h3>
-              <p>Git, VS Code, Visual Studio, Figma, MySQL, Oracle, SQLite, ASP.NET Core, Android Studio</p>
-            </div>
-            <div>
-              <h3 className=" text-2xl mt-4 font-normal">Skills</h3>
-              <p>AutoCad, Use Cases, Test cases/scripts, Agile Methodologies, Emerging technologies, Software Development Life
-Cycle, Requirements Gathering, Application Development, Microsoft Office, MS Project, Debugging, Quality Assurance, Prototyping, Documentation, Programming, Business
-Requirements, Software Troubleshooting, Technical Analysis, Data Analysis, Resource Management, Project
-Management, Lean principles, Engineering principles, Stakeholder Management, Cost Analysis, Economic principles, Defect Management</p>
-            </div>
-            <div>
-              <h3 className=" text-2xl mt-4 font-normal">Suitability</h3>
-              <p>Time Management, Problem-solving, Interpersonal skills, Communication, Written Communication,
-Collaborative, Organized, Team player, Flexibility, Analytical, Presentation, Customer Reporting tools, Key Performance
-Indicators, Financial Reporting, Customer service</p>
-            </div>
+          {/* Slide 1 */}
+          <div className="flex flex-col pt-20 w-full">
+            <h2 className="text-3xl text-center pb-6">Introduction</h2>
+            <p>Hi there! I am Tansima Kamal Fiana, currently in my final semester of studying Software Development at SAIT. Recently, a friend from SAIT's Mechanical Engineering program approached me about collaborating on a project. Initially, I didn't give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
           </div>
+
+          {/* Slide 2 */}
+          <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center">Problem Statement</h2>
+            <p>This project aims to properly integrate the ASRS system with the IRB 140 work-cell to 
+transport and store raw material in storage trays, while meeting existing safety 
+requirements. They collaborated with other capstone teams, they will integrate the use of the 
+Lab AGV and storage of cartridges containing raw material into the ecosystem.
+The client has requested the team to update the functionality of the ASRS 
+system, so that it integrates and effectively communicates with the IRB 140 work-cell.
+The goal of the project is to simulate warehouse material transportation and inventory 
+storage systems.</p>
+           
+          </div>
+
+         
+
+          {/* Slide 4 */}
+          <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center">Objective Tree</h2>
+            
+            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srsc" className="justify-center flex" src="/Capture.PNG" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+          </div>
+
+       
+
+          {/* Slide 6 */}
+          <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center">Contribution</h2>
+            <p>I have created a Figma design for the user interface (UI) of the HMI (Human-Machine Interface) for the ASRS project. The UI is intended to guide the user through each function screen, such as operating the robot or accessing the settings. They are using GX Designer to code the frontend UI of the HMI and asked me if I could come up with a user-friendly Figma UX for them to reference. At first, I had no clue what they were talking about, but when they explained it to me, I started sketching some low-fidelity prototypes as they explained.</p>
+                     
+          </div>
+
+          {/* Slide 7 */}
+          <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center"> Review 1</h2>
+            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srsl" className="justify-center flex" src="/lofip.JPEG" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs2" className="justify-center flex" src="/lofip2.JPEG" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+          </div>
+
+
+
+          {/* Slide 8 */}
+          <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center">Redesign Process</h2>
+            <p>I managed to transform those initial low-fidelity prototypes into high-fidelity designs. Incorporating both their guidance and some of my own ideas, I refined the UI to be even more user-friendly and efficient. These Figma prototypes now serve as comprehensive guides for the GX Designer coding process, ensuring that the frontend UI of the HMI meets both functionality and usability standards. I still have a few pages left to design, and I'm currently working on them. Stay tuned for the updates!</p>
+            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs4" className="justify-center flex" src="/HMI 11_ - Home Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs5" className="justify-center flex" src="/HMI 11_ - Auto Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs6" className="justify-center flex" src="/HMI 11_ - Manual Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+          </div>
+
+ {/* Slide 6 */}
+ <div className="flex flex-col pt-20 w-full space-y-6">
+            <h2 className="text-3xl text-center">Conclusion</h2>
+            
+              <p>This collaborative journey has been both challenging and rewarding. Designing for something outside of my degree field proved to be both a challenge and a delight. It pushed me to think outside of my comfort zone and explore new concepts. Through teamwork and perseverance, we've crafted a user-friendly interface that meets the needs of our project. As I continue to work on the remaining pages, I'm excited to see the final product come together. Stay tuned for more updates on our progress!</p>       
+          </div>
+
+
         </div>
       </div>
     </main>
