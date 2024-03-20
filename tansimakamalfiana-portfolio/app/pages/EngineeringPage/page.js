@@ -29,7 +29,6 @@ export default function EngineeringPage() {
         <BackButton url="#Navbar" />
       </div>}
 
-
       <div className="w-screen bg-pink-50 flex-col pb-12">
 
         
@@ -60,8 +59,6 @@ storage systems.</p>
            
           </div>
 
-         
-
           {/* Slide 4 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Objective Tree</h2>
@@ -81,8 +78,10 @@ storage systems.</p>
           {/* Slide 7 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center"> Review 1</h2>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srsl" className="justify-center flex" src="/lofip.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs2" className="justify-center flex" src="/lofip2.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex flex-row">
+              <div className="flex w-8/12 mx-auto"><Image alt="srsl" className="justify-center flex" src="/lofip.JPEG" height="1080" width="1920" style={{objectFit: 'fit', position: 'relative'}} /></div>
+              <div className="flex w-3/12 mx-auto"><Image alt="srs2" className="justify-center flex" src="/lofip2.JPEG" height="1080" width="1920" style={{objectFit: 'fit', position: 'relative'}} /></div>
+            </div>
           </div>
 
 
@@ -90,19 +89,21 @@ storage systems.</p>
           {/* Slide 8 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Redesign Process</h2>
-            <p>I managed to transform those initial low-fidelity prototypes into high-fidelity designs using figma. Incorporating both their guidance and some of my own ideas, I refined the UI to be even more user-friendly and efficient. These Figma prototypes now serve as comprehensive guides for the GX Designer coding process, ensuring that the frontend UI of the HMI meets both functionality and usability standards. I still have a few pages left to design, and I&apos;m currently working on them. Stay tuned for the updates!</p>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs4" className="justify-center flex" src="/HMI 11_ - Home Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs5" className="justify-center flex" src="/HMI 11_ - Auto Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs6" className="justify-center flex" src="/HMI 11_ - Manual Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-          </div>
+            <p>I managed to transform those initial low-fidelity prototypes into high-fidelity designs. Incorporating both their guidance and some of my own ideas, I refined the UI to be even more user-friendly and efficient. These Figma prototypes now serve as comprehensive guides for the GX Designer coding process, ensuring that the frontend UI of the HMI meets both functionality and usability standards. I still have a few pages left to design, and I&apos;m currently working on them. Stay tuned for the updates!</p>
+            <div className="grid grid-cols-2 p-4 gap-1">
+              <div className="flex justify-center w-full mx-auto"><Image alt="srs4" className="justify-center flex" src="/HMI 11_ - Home Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              <div className="flex justify-center w-full mx-auto"><Image alt="srs5" className="justify-center flex" src="/HMI 11_ - Auto Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              <div className="flex justify-center w-full mx-auto"><Image alt="srs6" className="justify-center flex" src="/HMI 11_ - Manual Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            </div>
 
- {/* Slide 6 */}
- <div className="flex flex-col pt-20 w-full space-y-6">
+          {/* Slide 6 */}
+          <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Conclusion</h2>
             
               <p>This collaborative journey has been both challenging and rewarding. Designing for something outside of my degree field proved to be both a challenge and a delight. It pushed me to think outside of my comfort zone and explore new concepts. Through teamwork and perseverance, we&apos;ve crafted a user-friendly interface that meets the needs of our project. As I continue to work on the remaining pages, I&apos;m excited to see the final product come together. Stay tuned for more updates on our progress!</p>       
           </div>
         </div>
+      </div>
       </div>
     </main>
   );
