@@ -9,9 +9,11 @@ import { IoMdHome } from "react-icons/io";
 import BackButton from "@/app/components/BackToTopButton"
 
 import Navigation from "@/app/navigation/page"
+import BackButton from "@/app/components/BackToTopButton"
 import { useState, useEffect } from "react"
 
 export default function EngineeringPage() {
+  const scrollY = useScroll();
   const scrollY = useScroll();
 
   const stretchedWindowClass = ["w-10/12 h-full flex justify-center mx-auto font-light",
@@ -28,7 +30,6 @@ export default function EngineeringPage() {
       <div className={"transition duration-500 opacity-100"}>
         <BackButton url="#Navbar" />
       </div>}
-
 
       <div className="w-screen bg-pink-50 flex-col pb-12">
 
@@ -59,9 +60,7 @@ The goal of the project is to simulate warehouse material transportation and inv
 storage systems.</p>
            
           </div>
-
-         
-
+          
           {/* Slide 4 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Objective Tree</h2>
@@ -115,19 +114,31 @@ storage systems.</p>
 
 function useScroll() {
   const [scrollY, setScrollY] = useState(0);
+function useScroll() {
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
     
     // Add event listener
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
      
     // Call handler right away so state gets updated with initial window size
     handleScroll();
+    handleScroll();
     
     // Remove event listener on cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+    }, []); // Empty array ensures that effect is only run on mount
+  return scrollY;
     return () => {
       window.removeEventListener("scroll", handleScroll);
     }
