@@ -37,7 +37,7 @@ export default function EngineeringPage() {
           {/* Slide 1 */}
           <div className="flex flex-col pt-20 w-full">
             <h2 className="text-3xl text-center pb-6">Introduction</h2>
-            <p>Hi there! I am Tansima Kamal Fiana, currently in my final semester of studying Software Development at SAIT. Recently, a friend from SAIT's Mechanical Engineering program approached me about collaborating on a project. Initially, I didn't give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
+            <p>Hi there! I am Tansima Kamal Fiana, currently in my final semester of studying Software Development at SAIT. Recently, a friend from SAIT&apos;s Mechanical Engineering program approached me about collaborating on a project. Initially, I didn&apos;t give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
           </div>
 
           {/* Slide 2 */}
@@ -84,7 +84,7 @@ storage systems.</p>
           {/* Slide 8 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Redesign Process</h2>
-            <p>I managed to transform those initial low-fidelity prototypes into high-fidelity designs. Incorporating both their guidance and some of my own ideas, I refined the UI to be even more user-friendly and efficient. These Figma prototypes now serve as comprehensive guides for the GX Designer coding process, ensuring that the frontend UI of the HMI meets both functionality and usability standards. I still have a few pages left to design, and I'm currently working on them. Stay tuned for the updates!</p>
+            <p>I managed to transform those initial low-fidelity prototypes into high-fidelity designs. Incorporating both their guidance and some of my own ideas, I refined the UI to be even more user-friendly and efficient. These Figma prototypes now serve as comprehensive guides for the GX Designer coding process, ensuring that the frontend UI of the HMI meets both functionality and usability standards. I still have a few pages left to design, and I&apos;m currently working on them. Stay tuned for the updates!</p>
             <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs4" className="justify-center flex" src="/HMI 11_ - Home Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
             <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs5" className="justify-center flex" src="/HMI 11_ - Auto Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
             <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs6" className="justify-center flex" src="/HMI 11_ - Manual Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
@@ -94,7 +94,7 @@ storage systems.</p>
  <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Conclusion</h2>
             
-              <p>This collaborative journey has been both challenging and rewarding. Designing for something outside of my degree field proved to be both a challenge and a delight. It pushed me to think outside of my comfort zone and explore new concepts. Through teamwork and perseverance, we've crafted a user-friendly interface that meets the needs of our project. As I continue to work on the remaining pages, I'm excited to see the final product come together. Stay tuned for more updates on our progress!</p>       
+              <p>This collaborative journey has been both challenging and rewarding. Designing for something outside of my degree field proved to be both a challenge and a delight. It pushed me to think outside of my comfort zone and explore new concepts. Through teamwork and perseverance, we&apos;ve crafted a user-friendly interface that meets the needs of our project. As I continue to work on the remaining pages, I&apos;m excited to see the final product come together. Stay tuned for more updates on our progress!</p>       
           </div>
 
 
