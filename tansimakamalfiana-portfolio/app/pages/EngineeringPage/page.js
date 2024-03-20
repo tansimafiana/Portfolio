@@ -76,8 +76,10 @@ storage systems.</p>
           {/* Slide 7 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center"> Review 1</h2>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srsl" className="justify-center flex" src="/lofip.JPEG" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs2" className="justify-center flex" src="/lofip2.JPEG" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex flex-row">
+              <div className="flex w-8/12 mx-auto"><Image alt="srsl" className="justify-center flex" src="/lofip.JPEG" height="1080" width="1920" style={{objectFit: 'fit', position: 'relative'}} /></div>
+              <div className="flex w-3/12 mx-auto"><Image alt="srs2" className="justify-center flex" src="/lofip2.JPEG" height="1080" width="1920" style={{objectFit: 'fit', position: 'relative'}} /></div>
+            </div>
           </div>
 
 
@@ -86,9 +88,11 @@ storage systems.</p>
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Redesign Process</h2>
             <p>I managed to transform those initial low-fidelity prototypes into high-fidelity designs. Incorporating both their guidance and some of my own ideas, I refined the UI to be even more user-friendly and efficient. These Figma prototypes now serve as comprehensive guides for the GX Designer coding process, ensuring that the frontend UI of the HMI meets both functionality and usability standards. I still have a few pages left to design, and I&apos;m currently working on them. Stay tuned for the updates!</p>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs4" className="justify-center flex" src="/HMI 11_ - Home Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs5" className="justify-center flex" src="/HMI 11_ - Auto Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs6" className="justify-center flex" src="/HMI 11_ - Manual Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="grid grid-cols-2 p-4 gap-1">
+              <div className="flex justify-center w-full mx-auto"><Image alt="srs4" className="justify-center flex" src="/HMI 11_ - Home Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              <div className="flex justify-center w-full mx-auto"><Image alt="srs5" className="justify-center flex" src="/HMI 11_ - Auto Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              <div className="flex justify-center w-full mx-auto"><Image alt="srs6" className="justify-center flex" src="/HMI 11_ - Manual Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            </div>
           </div>
 
  {/* Slide 6 */}
