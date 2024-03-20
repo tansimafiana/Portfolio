@@ -91,37 +91,67 @@ export default function WebDevPage() {
             <h2 className="text-3xl text-center">DIAGRAMS</h2>
             <h3 className="text-2xl">Use Case:</h3>
             <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Usecasediagram1.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">Class Diagram:</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/ClassDiagram.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">Entity Relationship Diagram:</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Entityrelationshipdiagram1.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">State Machine Diagram:</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Statemachinediagram2.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">Activity Diagram (AddNewCat):</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/ActivityDiagramBreederAddNewCat.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">Activity Diagram (Purchase Cat):</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/ActivityDiagramCustomerPurchaseCatUpdated.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              <div>
+                <h3 className="text-2xl">Class Diagram:</h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/ClassDiagram.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+            <div className="grid grid-cols-2 text-center gap-y-8 pt-4">
+              <div>
+                <h3 className="text-2xl">Entity Relationship Diagram:</h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Entityrelationshipdiagram1.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+              <div>
+                <h3 className="text-2xl">State Machine Diagram:</h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Statemachinediagram2.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+              <div>
+                <h3 className="text-2xl">Activity Diagram (AddNewCat):</h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/ActivityDiagramBreederAddNewCat.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+              <div>
+                <h3 className="text-2xl">Activity Diagram (Purchase Cat):</h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/ActivityDiagramCustomerPurchaseCatUpdated.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+            </div>
           </div>
 
           {/* Slide 5 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">PROTOTYPE</h2>
-            <h3 className="text-2xl">HomePage (Logged Out):</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Home -Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">Cat List (Logged Out):</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Cats List - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">Cat List (Logged In - Breeder):</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Cats List - Logged In (Breeder).png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl"> Cat (Logged Out): </h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Cat - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">Litter List (Logged Out):</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Litters List - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">Litter (Logged Out):</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Litter - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">Chat Portal (Logged In):</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Chat Portal - Logged In.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <h3 className="text-2xl">User Page (Logged In):</h3>
-            <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/User Page - Logged In.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="grid grid-cols-3 text-center gap-y-16">
+              <div>
+                <h3 className="text-2xl">HomePage (Logged Out):</h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Home -Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+              <div>
+                <h3 className="text-2xl">Cat List (Logged Out):</h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Cats List - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+              <div>
+                <h3 className="text-2xl">Cat List (Logged In - Breeder):</h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Cats List - Logged In (Breeder).png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+              <div>
+                <h3 className="text-2xl"> Cat (Logged Out): </h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Cat - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+              <div>
+                <h3 className="text-2xl">Litter List (Logged Out):</h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Litters List - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+              <div>
+                <h3 className="text-2xl">Litter (Logged Out):</h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Litter - Logged Out.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+              <div>
+                <h3 className="text-2xl">Chat Portal (Logged In):</h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/Chat Portal - Logged In.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+              <div>
+                <h3 className="text-2xl">User Page (Logged In):</h3>
+                <div className="flex justify-center w-11/12 mx-auto drop-shadow"><Image alt="diagram" className="justify-center flex" src="/User Page - Logged In.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              </div>
+            </div>
           </div>
 
            {/* Slide 6 */}
