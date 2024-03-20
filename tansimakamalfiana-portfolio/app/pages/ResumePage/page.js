@@ -142,13 +142,13 @@ export default function ResumePage() {
             </div>
             <div>
               <h3 className=" text-2xl mt-4 font-normal">Developer Tools</h3>
-              <p>Git, VS Code, Visual Studio, Figma, MySQL, Oracle, SQLite, ASP.NET Core, Android Studio</p>
+              <p>Git, VS Code, Adobe Photoshop, Blender, Figma, Software Ideas Modeler, MySQL, Oracle, SQLite, ASP.NET Core, Android Studio</p>
             </div>
             <div>
               <h3 className=" text-2xl mt-4 font-normal">Skills</h3>
-              <p>AutoCad, Use Cases, Test cases/scripts, Agile Methodologies, Emerging technologies, Software Development Life
+              <p>Use Cases, Test cases/scripts, Agile Methodologies, Emerging technologies, Software Development Life
 Cycle, Requirements Gathering, Application Development, Microsoft Office, MS Project, Debugging, Quality Assurance, Prototyping, Documentation, Programming, Business
-Requirements, Software Troubleshooting, Technical Analysis, Data Analysis, Resource Management, Project
+Requirements, Software Troubleshooting, Technical Analysis, Resource Management, Project
 Management, Lean principles, Engineering principles, Stakeholder Management, Cost Analysis, Economic principles, Defect Management</p>
             </div>
             <div>
