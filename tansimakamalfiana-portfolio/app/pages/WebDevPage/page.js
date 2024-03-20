@@ -117,7 +117,7 @@ export default function WebDevPage() {
 
           {/* Slide 5 */}
           <div className="flex flex-col pt-20 text-center w-full space-y-6">
-            <h2 className="text-3xl text-center">PROTOTYPE</h2>
+            <h2 className="text-3xl text-center">PROTOTYPE (Figma)</h2>
             <div className={ size.width < 900 ? " space-y-6" : "grid grid-cols-3 text-center gap-y-16"}>
               <div className="space-y-6 pb-6">
                 <h3 className="text-2xl">HomePage (Logged Out):</h3>
