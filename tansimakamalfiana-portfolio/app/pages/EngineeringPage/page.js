@@ -9,11 +9,9 @@ import { IoMdHome } from "react-icons/io";
 import BackButton from "@/app/components/BackToTopButton"
 
 import Navigation from "@/app/navigation/page"
-import BackButton from "@/app/components/BackToTopButton"
 import { useState, useEffect } from "react"
 
 export default function EngineeringPage() {
-  const scrollY = useScroll();
   const scrollY = useScroll();
 
   const stretchedWindowClass = ["w-10/12 h-full flex justify-center mx-auto font-light",
@@ -60,7 +58,7 @@ The goal of the project is to simulate warehouse material transportation and inv
 storage systems.</p>
            
           </div>
-          
+
           {/* Slide 4 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Objective Tree</h2>
@@ -84,8 +82,6 @@ storage systems.</p>
               <div className="flex w-8/12 mx-auto"><Image alt="srsl" className="justify-center flex" src="/lofip.JPEG" height="1080" width="1920" style={{objectFit: 'fit', position: 'relative'}} /></div>
               <div className="flex w-3/12 mx-auto"><Image alt="srs2" className="justify-center flex" src="/lofip2.JPEG" height="1080" width="1920" style={{objectFit: 'fit', position: 'relative'}} /></div>
             </div>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srsl" className="justify-center flex" src="/lofip.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-            <div className="flex justify-center w-11/12 mx-auto"><Image alt="srs2" className="justify-center flex" src="/lofip2.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
           </div>
 
 
@@ -100,13 +96,14 @@ storage systems.</p>
               <div className="flex justify-center w-full mx-auto"><Image alt="srs6" className="justify-center flex" src="/HMI 11_ - Manual Page.png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
             </div>
 
- {/* Slide 6 */}
- <div className="flex flex-col pt-20 w-full space-y-6">
+          {/* Slide 6 */}
+          <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Conclusion</h2>
             
               <p>This collaborative journey has been both challenging and rewarding. Designing for something outside of my degree field proved to be both a challenge and a delight. It pushed me to think outside of my comfort zone and explore new concepts. Through teamwork and perseverance, we&apos;ve crafted a user-friendly interface that meets the needs of our project. As I continue to work on the remaining pages, I&apos;m excited to see the final product come together. Stay tuned for more updates on our progress!</p>       
           </div>
         </div>
+      </div>
       </div>
     </main>
   );
@@ -114,31 +111,19 @@ storage systems.</p>
 
 function useScroll() {
   const [scrollY, setScrollY] = useState(0);
-function useScroll() {
-  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
     
     // Add event listener
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("scroll", handleScroll);
      
     // Call handler right away so state gets updated with initial window size
     handleScroll();
-    handleScroll();
     
     // Remove event listener on cleanup
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    }
-    }, []); // Empty array ensures that effect is only run on mount
-  return scrollY;
     return () => {
       window.removeEventListener("scroll", handleScroll);
     }
