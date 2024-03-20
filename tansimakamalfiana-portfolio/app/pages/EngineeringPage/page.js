@@ -43,7 +43,7 @@ export default function EngineeringPage() {
 
           {/* Slide 2 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
-            <h2 className="text-3xl text-center">Problem Statement</h2>
+            <h2 className="text-3xl text-center">Problem Statement </h2>
             <p>This project aims to properly integrate the ASRS system with the IRB 140 work-cell to 
 transport and store raw material in storage trays, while meeting existing safety 
 requirements. They collaborated with other capstone teams, they will integrate the use of the 
