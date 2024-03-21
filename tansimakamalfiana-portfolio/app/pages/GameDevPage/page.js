@@ -31,76 +31,72 @@ export default function GameDevPage() {
         <div className="w-10/12 h-full flex flex-col justify-center items-center mx-auto font-light">
           {/* Logo */}
           <div className="flex pt-12">
-            <Image src="/Cyferd.png" height="300" width={size.width ? (size.width / 4 > 300 ? 300 : size.width / 4) : 300} />
-            <h1 className=" text-5xl pt-2 text-[#1a1a53]">| Game Development</h1>
+            
+            <h1 className=" text-5xl pt-2 text-[#1a1a53]"> Game Development</h1>
           </div>
 
-          {/* Slide 1 */}
-          <div className="flex flex-col pt-20 w-full">
-            <h2 className="text-3xl text-center pb-6">Introduction</h2>
-            <p>Hello, I&apos;m Tansima Kamal Fiana, currently studying in my last semester of Software Development at SAIT. As part of my internship, I developed an application called Pause and Reflect using the Cyferd platform. Cyferd is a digital transformation platform.</p>
-          </div>
 
           {/* Slide 2 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
-            <h2 className="text-3xl text-center">Overview</h2>
-            <p>The Pause and Reflect app is designed to aid individuals dealing with stress, anxiety, and feelings of being overwhelmed. It serves as a valuable tool to promote inner peace, balance, and well-being through various features and trackers.</p>
-            <p>By encouraging users to slow down, reflect on their emotions, body, and thoughts, the app facilitates mindfulness and self-awareness. Users can also provide feedback to enhance their experience.</p>
-            <p>Through this application, users can take a momentary break from the chaos of daily life and reconnect with themselves.</p>
+            <h2 className="text-3xl text-center">Introduction</h2>
+            <p>Ever wondered what it is like to dive into the world of game development? Well, let me tell you about my adventure with an indie story mode game called Zomboid! My friend had this awesome idea for a game, and I could not resist jumping in to help bring it to life. Using 3D modeling tools, I unleashed my creativity to design layouts, characters, cosmetics, weapons, and all sorts of cool objects for the game. It was like being a mad scientist in a virtual laboratory, crafting the perfect elements to make the game pop! From brainstorming sessions to late-night modeling marathons, this project was an exhilarating ride filled with fun and creativity. And the best part? Seeing our ideas come to life in the game was an absolute thrill!</p>
           </div>
 
           {/* Slide 3 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
-            <h2 className="text-3xl text-center">User Personas</h2>
-            <p>College Students: Balancing academic, social, and personal responsibilities, college students often have limited time for self-care. The Pause and Reflect app offers quick self-reflection activities, aiding in emotional regulation and self-awareness.</p>
-            <p>Busy Professionals: Juggling multiple commitments, busy professionals often feel stressed and overwhelmed. The app helps them connect with their emotions and thoughts amidst hectic schedules.</p>
+            <h2 className="text-3xl text-center">Contribution</h2>
+          <p>Mapping the 2D images from Photoshop onto a 3D model was quite a fascinating experience for me. Blender played a significant role in this process, allowing me to integrate these textured images onto the 3D model. With Blender real-time updates I could instantly see how my changes affected the model giving me a sense of satisfaction and accomplishment. This dynamic platform not only made the process more efficient but also enhanced my creativity by providing immediate feedback. Overall combining Photoshop and Blender opened up new possibilities for me in 3D design allowing me to bring my ideas to life in ways I had not imagined before. It was a bit challenging to learn at first but once I figured it out it was so much fun!</p>
           </div>
 
           {/* Slide 4 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
-            <h2 className="text-3xl text-center">Data Model</h2>
-            <p>The data model for Pause and Reflect includes several data collections. Users start by creating a profile, allowing them to track various aspects of their well-being. Trackers and feedback options are associated with each user for personalized experience.</p>
-            <div className="flex justify-center w-11/12 mx-auto"><Image className="justify-center flex" src="/Pause and reflect data model_page-0001.jpg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <h2 className="text-3xl text-center">Design Process 1</h2>
+            
+            
+            <div className="flex justify-center w-full mx-auto"><Image alt="zom1" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.47 PM.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+           
+            
+            <div className="flex justify-center w-full mx-auto"><Image alt="zom4" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.48 PM (2).jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-full mx-auto"><Image alt="zom5" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.48 PM.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-full mx-auto"><Image alt="zom6" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.49 PM.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-full mx-auto"><Image alt="zom7" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.50 PM (1).jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-full mx-auto"><Image alt="zom8" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.50 PM (2).jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-full mx-auto"><Image alt="zom9" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.50 PM.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-full mx-auto"><Image alt="zom9" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.51 PM.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+              
+         
+         
           </div>
 
-          {/* Slide 5 */}
-          <div className="flex flex-col pt-20 w-full space-y-6">
-            <h2 className="text-3xl text-center"> Demo</h2>
-            <p>*I no longer have access to the platform due to the end of my contract. However, here is an imaginative demo*</p>
-            <h3 className="text-2xl">Charts</h3>
-            <p>Sleep Analysis: Interpret sleep patterns and identify.</p>
-            <p>KPI Charts: Track session counts to monitor progress.</p>
-            <h3 className="text-2xl">Personal Profile</h3>
-            <p>Medical History: Input relevant medical information for better customization.</p>
-            <p>Emotional Wellness Inventory: Assess mood and receive an overall mood score.</p>
-            <p>Self-care Practices: Track self-pampering habits and receive journaling prompts.</p>
-            <p>Sleep Tracker: Monitor sleep efficiency.</p>
-            <h3 className="text-2xl">Wellness of the Body Tabs</h3>
-            <p>Physical Health: Access Tools for maintaining physical well-being and disease prevention.</p>
-            <h3 className="text-2xl">Support and Feedback</h3>
-            <p>Feedback: Provide feedback to improve the app.</p>
-            <p>Support: Access support resources, including phone numbers and links for various needs.</p>
-            <p></p>
-          </div>
+
+
+
+
+         
 
           {/* Slide 6 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
-            <h2 className="text-3xl text-center">Self Reflection</h2>
-            <p>Despite being new to the Cyferd platform, I created an app with ease, learning JSON and developing skills in coding, problem-solving, front-end development, and communication.</p>
-            <p>I improved the user interface and added more functionality, such as new features and integrations with other systems, to enhance the app&apos;s usability and visual appeal.</p>            
+            <h2 className="text-3xl text-center">Redesign Process</h2>
+             
+           
+           
+            
+            <div className="flex justify-center w-full mx-auto"><Image alt="asset24" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 4.57.31 AM (1).jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-full mx-auto"><Image alt="ass3" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.48 PM.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-full mx-auto"><Image alt="ass4" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.49 PM.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-full mx-auto"><Image alt="ass5" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.50 PM (1).jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-full mx-auto"><Image alt="ass6" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.50 PM (2).jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-full mx-auto"><Image alt="ass7" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.50 PM.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-full mx-auto"><Image alt="ass8" className="justify-center flex" src="/WhatsApp Image 2024-03-20 at 7.23.51 PM.jpeg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>           
           </div>
 
           {/* Slide 7 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
-            <h2 className="text-3xl text-center"> Acknowledgements</h2>
+            <h2 className="text-3xl text-center"> Conclusion</h2>
             <p>Special thanks to Sara Al-Seaidy, Solution Expert at Cyferd, for her guidance throughout this project. Her support has been invaluable in bringing this idea to life. </p>
           </div>
 
-          {/* Slide 8 */}
-          <div className="flex flex-col pt-20 w-full space-y-6">
-            <h2 className="text-3xl text-center">Certificate</h2>
-            <div className="flex justify-center w-11/12 mx-auto"><Image className="justify-center flex" src="/Cyferd-Certificate-TF (1).png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
-          </div>
+         
         </div>
       </div>
     </main>

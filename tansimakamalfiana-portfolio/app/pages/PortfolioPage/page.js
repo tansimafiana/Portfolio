@@ -15,17 +15,17 @@ export default function ContactPage() {
       <div className="mx-auto flex w-4/5 justify-center">
         <div className="flex flex-col text-black align-middle py-8">
           <div className="flex-col justify-center ">
-            <h1 className=" text-6xl py-4 px-8 text-center font-extrabold">PORTFOLIO</h1>
+            <h1 className=" text-6xl py-4 px-8 text-center ">PORTFOLIO</h1>
             <div className="flex w-full mx-auto justify-evenly">
               <button className="hover:text-rose-300 text-xl">
-                <Link href="/pages/WebDevPage">Web Dev</Link>
+                <Link href="/pages/WebDevPage"></Link>
               </button>
-              <p>|</p>
+              <p></p>
               <button className="hover:text-rose-300 text-xl">
-                <Link className=" drop-shadow-md" href="/pages/InternshipPage">Internship</Link></button>
-              <p>|</p>
+                <Link className=" drop-shadow-md" href="/pages/InternshipPage"></Link></button>
+              <p></p>
               <button className="hover:text-rose-300 text-xl">
-                <Link href="/pages/EngineeringPage">Engineering UX</Link>
+                <Link href="/pages/EngineeringPage"></Link>
               </button>
             </div>
           </div>      
