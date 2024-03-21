@@ -102,7 +102,7 @@ function returnEngineeringUX() {
         </div>
         <div className=" shadow-xl overflow-auto scroll-smooth p-4 rotate-12 my-auto bg-rose-50 opacity-90 rounded-3xl w-full h-4/5">
           <h2 className=" font-bold text-center mx-auto mb-1 text-xl">Engineering UX</h2>
-          <p className=" text-center text-sm">(Figma, Sketches)</p>
+          <p className=" text-center text-sm">(Figma, Lo-fi Sketches)</p>
           <button className="bg-white rounded-xl p-2 m-4 opacity-100 flex drop-shadow-md ml-auto mr-full"><Link href="../pages/EngineeringPage">Case Study ➤</Link></button>
           <p className="">Partnering with a friend from Mechanical Engineering, we&apos;re integrating an Automated Storage Retrieval System (ASRS) with an ABB IRB140 Robot Arm. My role involves designing a user-friendly Human-Machine Interface (HMI) using Figma. Through this collaboration, I&apos;m exploring new concepts and pushing the boundaries of my skills. Stay tuned for updates on our progress!</p>
         </div>
@@ -125,8 +125,8 @@ function returnPortfolio() {
           </Link>
         </div>
         <div className=" shadow-xl overflow-auto scroll-smooth p-4 rotate-12 my-auto bg-rose-50 opacity-90 rounded-3xl w-full h-4/5">
-          <h2 className=" font-bold text-center mx-auto mb-1 text-xl">Introducing Tansima Kamal Fiana&apos;s Portfolio Showcase</h2>
-          <p className=" text-center text-sm">(Figma, Sketches)</p>
+          <h2 className=" font-bold text-center mx-auto mb-1 text-xl">Tansima Kamal Fiana&apos;s Portfolio</h2>
+          <p className=" text-center text-sm">(React.js, Tailwind CSS)</p>
           <button className="bg-white rounded-xl p-2 m-4 opacity-100 flex drop-shadow-md ml-auto mr-full"><Link href="../pages/PersonalPortfolioPage">Case Study ➤</Link></button>
           <p className="">Hello! I&apos;m Tansima Kamal Fiana, a Software Development student at SAIT, and this is my portfolio. Dive into a world where creativity meets technology. Crafted with React.js and Tailwind CSS, my portfolio offers seamless navigation and captivating animations. Explore my work and let&apos;s embark on this creative journey together. Thank you for visiting!</p>
         </div>
