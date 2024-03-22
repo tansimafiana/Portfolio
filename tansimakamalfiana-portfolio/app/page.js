@@ -8,18 +8,117 @@ import Buttons from "@/app/components/Buttons"
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import Link from "next/link";
 
 import { useState, useEffect } from "react"
 
+import { useCallback } from "react";
+import Particles from "react-particles";
+import { loadSnowPreset } from "tsparticles-preset-snow";
+
 
 export default function Home() {
+
+  const particlesInit = useCallback(async engine => {
+    console.log(engine);
+    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    //await loadFull(engine);
+    await loadSnowPreset(engine);
+    }, []);
+
+    const particlesLoaded = useCallback(async container => {
+      await console.log(container);
+    }, []);
 
   const size = useWindowSize();
 
   return (
     <main className="w-screen h-screen bg-rose-100 flex">
-      
-      <div className="m-auto w-red-200 w-4/5 justify-center">
+      <Particles
+            id="tsparticles"
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={{
+                /*preset: "snow",
+                background: {
+                    color: {
+                        value: "#FFE6E4",
+                    },
+                },
+                particles: {
+                    color: 
+                    shape: {
+                        type: "image",
+                        image: {
+                            src: "./Flower.png",
+                        }
+                    },
+                    size: {
+                        value: {min: 10, max: 35}
+                    }
+                },*/
+                interactivity: {
+                    events: {
+                        onClick: {
+                            enable: false,
+                            mode: "push",
+                        },
+                        onHover: {
+                            enable: false,
+                            mode: "repulse",
+                        },
+                        resize: true,
+                    },
+                    modes: {
+                        push: {
+                            quantity: 4,
+                        },
+                        repulse: {
+                            distance: 200,
+                            duration: 0.4,
+                        },
+                    },
+                },
+                particles: {
+                    color: {
+                        value: "#ffffff",
+                    },
+                    move: {
+                        direction: "bottom",
+                        enable: true,
+                        outModes: {
+                            default: "out",
+                        },
+                        random: false,
+                        speed: 3,
+                        straight: false,
+                    },
+                    number: {
+                        density: {
+                            enable: true,
+                            area: 10000,
+                        },
+                        value: 100,
+                    },
+                    opacity: {
+                        value: 0.5,
+                    },
+                    shape: {
+                        type: "circle"
+                    },
+                    size: {
+                        value: { min: 10, max: 35 },
+                    },
+                    zIndex: 0,
+                },
+                detectRetina: true,
+            }}
+        />
+
+
+      <div className="m-auto w-red-200 w-4/5 justify-center z-10">
         {/*<p>{size.width}</p>*/}
         <div className={size.width < 1000 ? "flex-col text-black" : "flex text-black"}>
 
@@ -30,6 +129,7 @@ export default function Home() {
               <div className={size.width < 1000 ? "py-2 px-8 flex justify-between" : "py-12 px-8 flex justify-between"}>
                 <GitHubIcon /> 
                 <LinkedInIcon />
+                <Link href="/pages/Animation"><button>Animation</button></Link>
               </div>
             </div>
           </div>
