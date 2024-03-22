@@ -13,7 +13,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react"
 
 import { useCallback } from "react";
-import Particles from "react-particles";
+import Particles from "react-tsparticles";
 import { loadSnowPreset } from "tsparticles-preset-snow";
 
 
