@@ -2,7 +2,9 @@
 const nextConfig = {
     images: {
         domains: ['img.freepik.com',
-                  'images.unsplash.com',],
+                  'images.unsplash.com',
+                  'i.postimg.cc',
+                ],
     },
 };
 

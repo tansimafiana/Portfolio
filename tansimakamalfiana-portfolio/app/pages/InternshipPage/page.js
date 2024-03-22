@@ -31,7 +31,7 @@ export default function InternshipSubpage() {
         <div className="w-10/12 h-full flex flex-col justify-center items-center mx-auto font-light">
           {/* Logo */}
           <div className="flex pt-12">
-            <Image src="/Cyferd.png" height="300" width={size.width ? (size.width / 4 > 300 ? 300 : size.width / 4) : 300} />
+            <Image alt="Cyferd" src="/Cyferd.png" height="300" width={size.width ? (size.width / 4 > 300 ? 300 : size.width / 4) : 300} />
             <h1 className=" text-5xl pt-2 text-[#1a1a53]">| Internship</h1>
           </div>
 
@@ -60,7 +60,7 @@ export default function InternshipSubpage() {
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Data Model</h2>
             <p>The data model for Pause and Reflect includes several data collections. Users start by creating a profile, allowing them to track various aspects of their well-being. Trackers and feedback options are associated with each user for personalized experience.</p>
-            <div className="flex justify-center w-11/12 mx-auto"><Image className="justify-center flex" src="/Pause and reflect data model_page-0001.jpg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-11/12 mx-auto"><Image alt="Data model" className="justify-center flex" src="/Pause and reflect data model_page-0001.jpg" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
           </div>
 
           {/* Slide 5 */}
@@ -99,7 +99,7 @@ export default function InternshipSubpage() {
           {/* Slide 8 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Certificate</h2>
-            <div className="flex justify-center w-11/12 mx-auto"><Image className="justify-center flex" src="/Cyferd-Certificate-TF (1).png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
+            <div className="flex justify-center w-11/12 mx-auto"><Image alt="Certificate" className="justify-center flex" src="/Cyferd-Certificate-TF (1).png" height="1080" width="1920" style={{objectFit: 'cover', position: 'relative'}} /></div>
           </div>
         </div>
       </div>
