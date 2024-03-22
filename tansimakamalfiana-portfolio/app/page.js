@@ -124,12 +124,11 @@ export default function Home() {
 
           <div className={size.width < 1000 ? "w-32 pt-32 flex justify-center mx-auto" : "w-64 flex justify-center mx-auto"}>
             <div className=" w-64">
-              <div className="flex justify-center m-auto"><FionaIcon /></div>
+              <div className="flex justify-center m-auto hover:scale-110 transition duration-300"><FionaIcon /></div>
 
               <div className={size.width < 1000 ? "py-2 px-8 flex justify-between" : "py-12 px-8 flex justify-between"}>
                 <GitHubIcon /> 
                 <LinkedInIcon />
-                <Link href="/pages/Animation"><button>Animation</button></Link>
               </div>
             </div>
           </div>
