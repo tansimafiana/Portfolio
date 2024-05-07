@@ -70,7 +70,7 @@ export default function GameDevPagePage() {
           {/* Slide 8 */}
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center">Redesign Process</h2>
-            <p>🚧 Coming soon on 29th March of 2024 🚧</p>
+            <p>🚧 Coming soon on June of 2024 🚧</p>
             <div className="grid grid-cols-2 p-4 gap-1">
              
             </div>
