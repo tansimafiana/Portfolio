@@ -61,7 +61,7 @@ export default function GameDevPagePage() {
           <div className="flex flex-col pt-20 w-full space-y-6">
             <h2 className="text-3xl text-center"> Design process 1</h2>
             <div className="flex flex-row">
-              <p>🚧 Coming Soon on 29th March of 2024 🚧</p>
+              <p>🚧 Coming Soon on June of 2024 🚧</p>
             </div>
           </div>
 
