@@ -71,8 +71,8 @@ export default function ResumePage() {
 
             <div className="mt-6">
             <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">Data Entry | Freelance</h3>
-                <h3 className="ml-auto pr-4">04/23 - Present</h3>
+                <h3 className="mr-auto justify-start text-2xl font-normal">Data Entry | V&J ACCOUNTING INC</h3>
+                <h3 className="ml-auto pr-4">04/23 - 09/23</h3>
               </div>
               <div className="w-full flex justify-space mx-auto">
                 <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
@@ -87,7 +87,7 @@ export default function ResumePage() {
             <div className="mt-6">
               <div className="w-full flex justify-space mx-auto">
                 <h3 className="mr-auto justify-start text-2xl font-normal">Team Lead | The Body Shop</h3>
-                <h3 className="ml-auto pr-4">01/23 - 02/24</h3>
+                <h3 className="ml-auto pr-4">10/23 - 02/24</h3>
               </div>
               <div className="w-full flex justify-space mx-auto">
                 <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
