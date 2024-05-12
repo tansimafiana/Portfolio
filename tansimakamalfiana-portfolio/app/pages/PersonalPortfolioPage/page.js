@@ -36,7 +36,7 @@ export default function PersonalPortfolioPage() {
           {/* Slide 1 */}
           <div className="flex flex-col pt-20 w-full">
             <h2 className="text-3xl text-center pb-6">Introduction</h2>
-            <p>Hello, my name is Tansima Kamal Fiana, and I am studying Software Development at Southern Alberta Institute of Technology. I am currently working on my portfolio, and I would like to showcase it here.</p>
+            <p>Hello, my name is Tansima Kamal Fiana, and I am a recent graduate of Software Development from Southern Alberta Institute of Technology. I am currently working on my portfolio to showcase some of my projects that I have done.</p>
           </div>
 
           {/* Slide 2 */}

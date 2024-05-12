@@ -42,7 +42,7 @@ export default function EngineeringPage() {
           {/* Slide 1 */}
           <div className="flex flex-col pt-20 w-full">
             <h2 className="text-3xl text-center pb-6">Introduction</h2>
-            <p>Hi there! I am Tansima Kamal Fiana, currently in my final semester of studying Software Development at SAIT. Recently, a friend from SAIT&apos;s Mechanical Engineering program approached me about collaborating on a project. Initially, I didn&apos;t give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
+            <p>A friend from SAIT&apos;s Mechanical Engineering program approached me about collaborating on a project. Initially, I didn&apos;t give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
           </div>
 
           {/* Slide 2 */}

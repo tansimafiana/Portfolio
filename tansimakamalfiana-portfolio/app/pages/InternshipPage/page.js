@@ -38,7 +38,7 @@ export default function InternshipSubpage() {
           {/* Slide 1 */}
           <div className="flex flex-col pt-20 w-full">
             <h2 className="text-3xl text-center pb-6">Introduction</h2>
-            <p>Hello, I&apos;m Tansima Kamal Fiana, currently studying in my last semester of Software Development at SAIT. As part of my internship, I developed an application called Pause and Reflect using the Cyferd platform. Cyferd is a digital transformation platform.</p>
+            <p>Hello, I&apos;m Tansima Kamal Fiana, a new graduate of Software Development from SAIT. As part of my internship, I developed an application called Pause and Reflect using the Cyferd platform. Cyferd is a digital transformation platform.</p>
           </div>
 
           {/* Slide 2 */}
