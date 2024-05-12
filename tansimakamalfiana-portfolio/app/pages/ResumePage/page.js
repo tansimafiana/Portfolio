@@ -79,7 +79,7 @@ export default function ResumePage() {
               </div>
               <ul className="mt-4 space-y-1">
                 <li>• Input financial data, including transactions, invoices, receipts, and payment details using Excel</li>
-                <li>• Enter and categorize expenses, which helps in tracking and managing the company spending. Did proper categorization to ensure accurate financial reporting</li>
+                <li>• Analyze and categorize financial transactions to enhance budget tracking and expense management; utilized Excel for precise categorization, ensuring alignment with financial reporting standards.</li>
                 <li>• Accuracy, attention to detail, and adherence to financial regulations</li>
               </ul>
             </div>
