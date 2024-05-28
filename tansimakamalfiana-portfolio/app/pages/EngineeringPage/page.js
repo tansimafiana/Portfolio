@@ -135,6 +135,14 @@ storage systems.</p>
         </div>
       </div>
 
+      <div className="bg-[#e4f7ff] h-fit w-screen pb-20">
+        <div className="w-8/12 mx-auto">
+          <h1 className="text-4xl pt-16 font-bold">Conclusion</h1>
+          <p className=" text-xl pt-12">This collaborative journey has been both challenging and rewarding. Designing for something outside of my degree field proved to be both a challenge and a delight. It pushed me to think outside of my comfort zone and explore new concepts. Through teamwork and perseverance, we&apos;ve crafted a user-friendly interface that meets the needs of our project. As I continue to work on the remaining pages, I&apos;m excited to see the final product come together. Stay tuned for more updates on our progress!</p>
+          
+        </div>
+      </div>
+
     </main>
   );
 }

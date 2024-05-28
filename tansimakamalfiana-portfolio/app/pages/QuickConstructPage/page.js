@@ -238,29 +238,11 @@ export default function QuickConstructPage() {
       <div className="bg-[#240046] h-fit w-screen text-white pb-20">
         <div className="w-8/12 mx-auto">
           <h1 className="text-6xl pt-20 font-bold">Key Takeaways</h1>
-          <p className=" text-2xl pt-12">I created a lofi wireframe of how the app would look and annotated around the sketches.</p>
+          <p className=" text-2xl pt-12">→ In my journey I made the mistake of worrying about the look of the UI too much. I think taking a step back and reassessing the user flows helped me to re-prioritize the UX.</p>
+          <p className=" text-2xl pt-12">→ I could have placed greater emphasis on addressing accessibility needs, which I aim to do going forward.</p>
+          <p className=" text-2xl pt-12">→ This project shows how far I have come as a UX/UI Designer. I feel like these final mock-ups are so much better than what I started with and I am really proud of that! If you would like to help me improve, please don&apos;t hesitate to reach out. I would love some feedback on my design and on how I could improve!</p>
           <div className="mt-16 mb-20" />
 
-          <div className=" flex justify-between mx-auto space-x-12 mt-6">
-            <PieChart src="/Lofi1.png" width="2206" height="1404" className=" w-[100%] mx-auto " bgcolor={" bg-[#240046] "} />
-            <PieChart src="/Lofi2.png" width="2206" height="1404" className=" w-[100%] mx-auto " bgcolor={" bg-[#240046] "} />
-          </div>
-          <div className=" flex justify-between mx-auto space-x-12 mt-6">
-            <PieChart src="/Userselectscreen (1).png" width="2206" height="1404" className=" w-[100%] mx-auto " bgcolor={" bg-[#240046] "} />
-            <PieChart src="/Sign up Page (1).png" width="2206" height="1404" className=" w-[100%] mx-auto " bgcolor={" bg-[#240046] "} />
-          </div>
-          <div className=" flex justify-between mx-auto space-x-12 mt-6">
-            <PieChart src="/Screen 1 (2).png" width="2206" height="1404" className=" w-[100%] mx-auto " bgcolor={" bg-[#240046] "} />
-            <PieChart src="/Dashboard (2).png" width="2206" height="1404" className=" w-[100%] mx-auto " bgcolor={" bg-[#240046] "} />
-          </div>
-          <div className=" flex justify-between mx-auto space-x-12 mt-6">
-            <PieChart src="/calendar (1).png" width="2206" height="1404" className=" w-[100%] mx-auto " bgcolor={" bg-[#240046] "} />
-            <PieChart src="/Message page (1).png" width="2206" height="1404" className=" w-[100%] mx-auto " bgcolor={" bg-[#240046] "} />
-          </div>
-          <div className=" flex justify-between mx-auto space-x-12 mt-6">
-            <PieChart src="/MeetingPage (1).png" width="2206" height="1404" className=" w-[100%] mx-auto " bgcolor={" bg-[#240046] "} />
-            <PieChart src="/Profile page (1).png" width="2206" height="1404" className=" w-[100%] mx-auto " bgcolor={" bg-[#240046] "} />
-          </div>
         </div>
       </div>
     </main>
