@@ -219,7 +219,7 @@ export default function QuickConstructPage() {
             </div>
             <div className="flex mx-6 space-x-6 mt-4">
               <PieChart src="/MessagesPage (1).png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
-              <PieChart src="/MeetingPage (2).png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
+              <PieChart src="/Meetingpage (2).png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
             </div>
           </div>
           <div className=" mt-16">
