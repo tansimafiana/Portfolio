@@ -208,7 +208,7 @@ export default function QuickConstructPage() {
               <h3 className="font-bold text-2xl mx-6 text-center w-1/2">Add New Calendar Event</h3>
             </div>
             <div className="flex mx-6 space-x-6 mt-4">
-              <PieChart src="/dashboard (3).png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
+              <PieChart src="/Dashboard (3).png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
               <PieChart src="/CalendarEvent.png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
             </div>
           </div>
