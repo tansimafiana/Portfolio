@@ -3,12 +3,12 @@ import Link from "next/link"
 
 import { useState, useEffect } from "react";
 
-export default function PieChart({className, width, height, src, bgcolor}) {
+export default function PieChart({className, width, height, src, bgcolor, full}) {
   
     const [popup, setPopup] = useState(false);
 
     return (
-    <div className="">
+    <div className={full ? "w-full" : ""}>
         <button onClick={() => setPopup(true)} className="mx-auto">
             <Image  src={src ? src : "/Piechart1.png"}
                 alt="Piechart"

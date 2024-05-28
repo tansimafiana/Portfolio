@@ -107,7 +107,7 @@ export default function QuickConstructPage() {
           <h1 className="text-6xl pt-16 mt-8 font-bold">User Flow Chart</h1>
           <p className=" text-2xl pt-12 mb-16">After creating the user story, I focused on creating the User Flow Chart. This has helped me understand how all the pages connect throughout the app. You can find all the User Flow Charts here: <a href="https://mysait-my.sharepoint.com/personal/tansima_fiana_edu_sait_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftansima%5Ffiana%5Fedu%5Fsait%5Fca%2FDocuments%2FresourceProvider%2Eashx%2Epdf&parent=%2Fpersonal%2Ftansima%5Ffiana%5Fedu%5Fsait%5Fca%2FDocuments" className="text-purple-800 underline" target="_blank">link</a></p>
 
-          <PieChart src="/UserFlow.png" width="1621" height="747" className=" w-[80%] mx-auto " bgcolor={" bg-[#fff1f2] "} />
+          <PieChart src="/UserFlow.png" width="1621" height="747" className=" w-[80%] mx-auto " bgcolor={" bg-[#fff1f2] "} full={true}/>
           <div className="mt-16 mb-20" />
           <div className="flex mx-auto justify-center">
             <div className="">
