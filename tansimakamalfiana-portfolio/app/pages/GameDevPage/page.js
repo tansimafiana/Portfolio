@@ -22,14 +22,14 @@ export default function GameDevPagePage() {
                            "h-full mt-6 mx-auto w-full"]
 
   return (
-    <main className="bg-rose-100 text-black my-auto flex-col flex flex-wrap ">
+    <main className="bg-white text-black my-auto flex-col flex flex-wrap ">
       <Navigation subpage={false} />
       { scrollY > 500 &&
       <div className={"transition duration-500 opacity-100"}>
         <BackButton url="#Navbar" />
       </div>}
 
-      <div className="w-screen bg-pink-50 flex-col pb-12">
+      <div className="w-screen bg-white flex-col pb-12">
 
         
         <div className="w-10/12 h-full flex flex-col justify-center items-center mx-auto font-light">

@@ -32,7 +32,7 @@ const Slideshow = ({slideData}) => {
 
     return (
         <div className="slide-container">
-        <Slide autoplay={false} transitionDuration={800}>
+        <Slide autoplay={false} transitionDuration={800} easing="ease">
          {slideData && slideData.map((slide, index)=> (
             <div className="h-full justify-center" key={index}>
               {slide}

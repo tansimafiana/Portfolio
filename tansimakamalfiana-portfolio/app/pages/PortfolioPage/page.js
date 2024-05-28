@@ -9,13 +9,13 @@ import { Slide } from "react-slideshow-image";
 
 export default function ContactPage() {
   return (
-    <main className="w-screen bg-rose-100 flex-col text-black">
+    <main className="w-screen bg-white flex-col text-black">
       <Navigation/>
 
       <div className="mx-auto flex w-4/5 justify-center">
         <div className="flex flex-col text-black align-middle py-8">
           <div className="flex-col justify-center ">
-            <h1 className=" text-6xl py-4 px-8 text-center ">PORTFOLIO</h1>
+            <h1 className=" text-4xl py-4 px-8 text-center ">PORTFOLIO</h1>
             <div className="flex w-full mx-auto justify-evenly">
               <button className="hover:text-rose-300 text-xl">
                 <Link href="/pages/WebDevPage"></Link>
@@ -32,32 +32,70 @@ export default function ContactPage() {
         </div>
       </div>
       <div className="w-4/5 mx-auto">
-        <Slideshow slideData={[returnCapstone(), returnInternship(), returnEngineeringUX(), returnPortfolio(), returnGameDevPage()]}/>
+        <Slideshow slideData={[returnQuickConstruct(), returnEngineeringUX(), returnInternship(), returnCapstone(), returnPortfolio(), returnGameDevPage()]}/>
       </div>
             
     </main>   
   );
 }
 
+function returnQuickConstruct() {
+  return (
+    <div className={"flex align-middle h-[60vh]"}>
+      <div className="relative h-full bg-white w-[50vw] mx-auto rounded-xl border border-gray-300 flex flex-col z-10 overflow-hidden shadow-lg mb-4">
+        <div className=" absolute top-0 ml-[5%] mr-[10%] h-[200px] w-[80%] mt-10 z-20">
+          <div className="flex w-full">
+            <div className=" p-4 bg-gray-200 size-full max-w-24 max-h-24 mt-6 rounded-full">
+              <Image src="/QuickConstruct Icon.png"
+                    alt="Quick Construct Icon"
+                    width="256"
+                    height="256"
+                    className=""/>
+            </div>
+            <div className="flex flex-col ml-8">
+              <h1 className="font-semibold text-3xl  mt-5">QuickConstruct</h1>
+              <div className="flex flex-col mr-auto max-w-[90%]">
+                <p className="text-gray-600 mb-4 text-justify mt-2">Industry professional application for construction project managers and tradespeople, incorporating well-planned UX/UI designing steps to ensure a flexible and user-friendly experience that is excellent for every type of user.</p>
+                <Link href="./QuickConstructPage" className="size-fit rounded-xl ml-auto">
+                  <div className=" mt-3 size-fit px-4 py-2 bg-gray-100 rounded-xl shadow-lg hover:cursor-pointer hover:text-purple-700 hover:scale-105 transition duration-300 ">
+                      <p className="">Case Study <span className="font-extrabold">→</span></p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <Link href="./QuickConstructPage" className="size-full rounded-xl">
+          <div className="relative size-full flex flex-col hover:cursor-pointer hover:scale-110 transition duration-300">
+            <div className="absolute bottom-0 right-0 flex flex-col size-full">
+              <div className="min-h-[40%] relative"/>
+              <Image src="/QuickConstruct Portfolio Thumbnail Splash.png"
+                    alt="QuickConstruct Mockup Thumbnail"
+                    width="1920"
+                    height="1080"
+                    className="relative max-h-[60%] w-fit ml-auto mt-auto"/>
+            </div>
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10 flex flex-col size-full">
+              <div className="min-h-[40%] relative"/>
+              <Image src="/QuickConstruct Portfolio Thumbnail Screens.png"
+                    alt="QuickConstruct Mockup Thumbnail"
+                    className="relative max-h-[45%] mt-auto mb-8 -translate-x-[10%]"
+                    layout="fill"
+                    objectFit="contain"/>
+            </div>
+          </div>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
 function returnCapstone() {
   return (
-    /*<div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
-      <button style={spanStyle}>{slideImage.caption}</button>
-    </div>*/
     <div className={"flex align-middle h-[60vh]"}>
-      {/*<Image className="justify-center m-auto" alt="slideshow" src={slideImage.src} width={size.width ? size.width * 0.5 : 300} height={size.height ? size.height * 0.5 : 300} />*/}
-      <div className={"flex rounded-3xl justify-center w-10/12 h-4/5 m-auto"}>
-        <div className=" rounded-3xl -rotate-12 m-auto w-full h-4/5">
-          <Link href="../pages/CapstonePage">
-            <Image className=" rounded-3xl hover:scale-110 transition duration-300 shadow-xl" alt="Cyferd" src="/CatteryHomepage.png" fill style={{objectFit: "contain", borderRadius: "5px"}}  />
-          </Link>
-        </div>
-        <div className=" shadow-xl overflow-auto scroll-smooth p-4 rotate-12 my-auto bg-rose-50 opacity-90 rounded-3xl w-full h-4/5">
-          <h2 className=" font-bold text-center mx-auto mb-1 text-xl">Diamond Valley Cattery</h2>
-          <p className=" text-right text-sm">(React.js, Tailwind CSS, Firebase, Figma, Software Ideas Modeler (UML), Github)</p>
-          <button className="bg-white rounded-xl p-2 m-4 opacity-100 flex drop-shadow-md ml-auto mr-full"><Link href="../pages/CapstonePage">Case Study ➤</Link></button>
-          <p className="">Hello! I&apos;m Tansima Kamal Fiana, a Software Development graduate from SAIT. My team and I were working on developing the Diamond Valley Cattery website, dedicated to cat breeding, aiming to streamline operations for our client. We&apos;ve invested many hours into this project and continue to do so. Specifically, I&apos;ve been in charge of the front end, overseeing the UX/UI design process in Figma and implementing it using React.js and Tailwind CSS.</p>
-        </div>
+      <div className="h-full bg-white w-[40vw] mx-auto rounded-xl border border-gray-400">
+
       </div>
     </div>
   );
@@ -65,47 +103,106 @@ function returnCapstone() {
 
 function returnInternship() {
   return (
-      /*<div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
-        <button style={spanStyle}>{slideImage.caption}</button>
-      </div>*/
-      <div className={"flex align-middle h-[60vh]"}>
-        {/*<Image className="justify-center m-auto" alt="slideshow" src={slideImage.src} width={size.width ? size.width * 0.5 : 300} height={size.height ? size.height * 0.5 : 300} />*/}
-        <div className={"flex rounded-3xl justify-center w-10/12 h-4/5 m-auto"}>
-          <div className=" shadow-xl rounded-3xl -rotate-12 m-auto w-full h-4/5">
-            <Link href="../pages/InternshipPage">
-              <Image className="bg-white rounded-3xl hover:scale-110 transition duration-300" alt="Cyferd" src="/Cyferd.png" fill style={{objectFit: "contain", borderRadius: "5px"}}  />
-            </Link>
+    <div className={"flex align-middle h-[60vh]"}>
+    <div className="relative h-full bg-white w-[50vw] mx-auto rounded-xl border border-gray-300 flex flex-col z-10 overflow-hidden shadow-lg mb-4">
+      <div className=" absolute top-0 ml-[5%] mr-[10%] h-[200px] w-[80%] mt-10 z-20">
+        <div className="flex w-full">
+          <div className=" size-full max-w-24 max-h-24 mt-6 rounded-full">
+            <Image src="/Cyferd Logo Dark.jpg"
+                  alt="Quick Construct Icon"
+                  width="256"
+                  height="256"
+                  className="rounded-full"/>
           </div>
-          <div className=" shadow-xl overflow-auto scroll-smooth p-4 rotate-12 my-auto bg-rose-50 opacity-90 rounded-3xl w-full h-4/5">
-            <h2 className=" font-bold text-center mx-auto mb-1 text-xl">Cyferd Internship</h2>
-            <p className=" text-center text-sm"> Pause and Reflect App</p>
-            <button className="bg-white rounded-xl p-2 m-4 opacity-100 flex drop-shadow-md ml-auto mr-full"><Link href="../pages/InternshipPage">Case Study ➤</Link></button>
-            <p className="">During my internship, I developed Pause and Reflect, an app on the Cyferd platform. It&apos;s aimed at reducing stress and promoting well-being by encouraging users to take a moment to pause, reflect, and reconnect with themselves. Designed with busy professionals and college students in mind, the app provides personalized self-reflection activities. While I&apos;m unable to provide a live demo, imagine features like sleep pattern tracking charts, personalized wellness profiles, tools for maintaining physical health, and visual aids for better understanding. This project significantly improved my coding and problem-solving abilities, and I&apos;m especially grateful to Sara Al-Seaidy for her guidance. My certificate is inside. I also received a certificate for my work on this project.</p>
+          <div className="flex flex-col ml-8">
+            <h1 className="font-semibold text-3xl  mt-5">Cyferd Internship</h1>
+            <div className="flex flex-col mr-auto max-w-[90%]">
+              <p className="text-gray-600 mb-4 text-justify mt-2">Industry professional application for construction project managers and tradespeople, incorporating well-planned UX/UI designing steps to ensure a flexible and user-friendly experience that is excellent for every type of user.</p>
+              <Link href="./InternshipPage" className="size-fit rounded-xl ml-auto">
+                <div className=" mt-3 size-fit px-4 py-2 bg-gray-100 rounded-xl shadow-lg hover:cursor-pointer hover:text-purple-700 hover:scale-105 transition duration-300 ">
+                    <p className="">Case Study <span className="font-extrabold">→</span></p>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
+
       </div>
+      <Link href="./InternshipPage" className="size-full rounded-xl">
+        <div className="relative size-full flex flex-col hover:cursor-pointer hover:scale-110 transition duration-300">
+          <div className="absolute bottom-0 right-0 flex flex-col size-full">
+            <div className="min-h-[40%] relative"/>
+            <Image src="/QuickConstruct Portfolio Thumbnail Splash.png"
+                  alt="QuickConstruct Mockup Thumbnail"
+                  width="1920"
+                  height="1080"
+                  className="relative max-h-[60%] w-fit ml-auto mt-auto"/>
+          </div>
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10 flex flex-col size-full">
+            <div className="min-h-[40%] relative"/>
+            <Image src="/QuickConstruct Portfolio Thumbnail Screens.png"
+                  alt="QuickConstruct Mockup Thumbnail"
+                  className="relative max-h-[45%] mt-auto mb-8 -translate-x-[10%]"
+                  layout="fill"
+                  objectFit="contain"/>
+          </div>
+        </div>
+      </Link>
+    </div>
+  </div>
   );
 };
 
 function returnEngineeringUX() {
   return (
-    /*<div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
-      <button style={spanStyle}>{slideImage.caption}</button>
-    </div>*/
     <div className={"flex align-middle h-[60vh]"}>
-      {/*<Image className="justify-center m-auto" alt="slideshow" src={slideImage.src} width={size.width ? size.width * 0.5 : 300} height={size.height ? size.height * 0.5 : 300} />*/}
-      <div className={"flex rounded-3xl justify-center w-10/12 h-4/5 m-auto"}>
-        <div className=" shadow-xl rounded-3xl -rotate-12 m-auto w-full h-4/5">
-          <Link href="../pages/InternshipPage">
-            <Image className="rounded-3xl hover:scale-110 transition duration-300" alt="Cyferd" src="/HMI 11_ - Home Page.png" fill style={{objectFit: "contain", borderRadius: "5px"}}  />
-          </Link>
+      <div className="relative h-full bg-white w-[50vw] mx-auto rounded-xl border border-gray-300 flex flex-col z-10 overflow-hidden shadow-lg mb-4">
+        <div className=" absolute top-0 ml-[5%] mr-[10%] h-[200px] w-[80%] mt-10 z-20">
+          <div className="flex w-full">
+            <div className=" p-4 bg-gray-200 size-full max-w-24 max-h-24 mt-6 rounded-full">
+              <Image src="/Robotic Arm SVG Icon-01.png"
+                    alt="Quick Construct Icon"
+                    width="256"
+                    height="256"
+                    className=""/>
+            </div>
+            <div className="flex flex-col ml-8">
+              <h1 className="font-semibold text-3xl  mt-5">Engineering UX</h1>
+              <div className="flex flex-col mr-auto max-w-[90%]">
+                <p className="text-gray-600 mb-4 mt-2">Collaborating with mechanical engineering students to help build a uniform and user-friendly experience that is easy to understand and essential for operating automated robotics systems.</p>
+                <Link href="./EngineeringPage" className="size-fit rounded-xl ml-auto">
+                  <div className=" mt-3 size-fit px-4 py-2 bg-gray-100 rounded-xl shadow-lg hover:cursor-pointer hover:text-[#5aa5dc] hover:scale-105 transition duration-300 ">
+                      <p className="">Case Study <span className="font-extrabold">→</span></p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div className=" shadow-xl overflow-auto scroll-smooth p-4 rotate-12 my-auto bg-rose-50 opacity-90 rounded-3xl w-full h-4/5">
-          <h2 className=" font-bold text-center mx-auto mb-1 text-xl">Engineering UX</h2>
-          <p className=" text-center text-sm">(Figma, Lo-fi Sketches)</p>
-          <button className="bg-white rounded-xl p-2 m-4 opacity-100 flex drop-shadow-md ml-auto mr-full"><Link href="../pages/EngineeringPage">Case Study ➤</Link></button>
-          <p className="">Partnering with a friend from Mechanical Engineering, we&apos;re integrating an Automated Storage Retrieval System (ASRS) with an ABB IRB140 Robot Arm. My role involves designing a user-friendly Human-Machine Interface (HMI) using Figma. Through this collaboration, I&apos;m exploring new concepts and pushing the boundaries of my skills. Stay tuned for updates on our progress!</p>
-        </div>
+        <Link href="./EngineeringPage" className="size-full rounded-xl">
+          <div className="relative size-full flex flex-col hover:cursor-pointer hover:scale-110 transition duration-300">
+            <div className="absolute bottom-0 right-0 flex flex-col size-full">
+              <div className="min-h-[20%] relative"/>
+              <Image src="/Cogs Background.png"
+                    alt="QuickConstruct Mockup Thumbnail"
+                    width="1470"
+                    height="980"
+                    className="relative max-h-[80%] w-fit ml-auto mt-auto"/>
+            </div>
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10 flex flex-col size-full">
+              <div className="min-h-[40%] relative"/>
+              <div className="relative max-h-[60%] w-full h-full mt-auto flex">
+                <Image src="/iPad Pro mockup 13-inch top view(4).png"
+                      alt="QuickConstruct Mockup Thumbnail"
+                      width="1025"
+                      height="800"
+                      className="relative h-[80%] w-fit mx-auto mt-8 -translate-x-[20%]"/>
+                
+              </div>
+            </div>
+          </div>
+        </Link>
       </div>
     </div>
   );
@@ -113,23 +210,9 @@ function returnEngineeringUX() {
 
 function returnPortfolio() {
   return (
-    /*<div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
-      <button style={spanStyle}>{slideImage.caption}</button>
-    </div>*/
     <div className={"flex align-middle h-[60vh]"}>
-      {/*<Image className="justify-center m-auto" alt="slideshow" src={slideImage.src} width={size.width ? size.width * 0.5 : 300} height={size.height ? size.height * 0.5 : 300} />*/}
-      <div className={"flex rounded-3xl justify-center w-10/12 h-4/5 m-auto"}>
-        <div className=" shadow-xl rounded-3xl -rotate-12 m-auto w-full h-4/5">
-          <Link href="../pages/PersonalPortfolioPage">
-            <Image className="rounded-3xl hover:scale-110 transition duration-300" alt="Cyferd" src="/PortfolioSnap.jpeg" fill style={{objectFit: "contain", borderRadius: "5px"}}  />
-          </Link>
-        </div>
-        <div className=" shadow-xl overflow-auto scroll-smooth p-4 rotate-12 my-auto bg-rose-50 opacity-90 rounded-3xl w-full h-4/5">
-          <h2 className=" font-bold text-center mx-auto mb-1 text-xl">Tansima Kamal Fiana&apos;s Portfolio</h2>
-          <p className=" text-center text-sm">(React.js, Tailwind CSS)</p>
-          <button className="bg-white rounded-xl p-2 m-4 opacity-100 flex drop-shadow-md ml-auto mr-full"><Link href="../pages/PersonalPortfolioPage">Case Study ➤</Link></button>
-          <p className="">Hello! I&apos;m Tansima Kamal Fiana, a Software Development graduate from SAIT, and this is my portfolio. Dive into a world where creativity meets technology. Crafted with React.js and Tailwind CSS, my portfolio offers seamless navigation and captivating animations. Explore my work and let&apos;s embark on this creative journey together. Thank you for visiting!</p>
-        </div>
+      <div className="h-full bg-white w-[40vw] mx-auto rounded-xl border border-gray-400">
+
       </div>
     </div>
   );
@@ -137,23 +220,9 @@ function returnPortfolio() {
 
 function returnGameDevPage() {
   return (
-    /*<div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
-      <button style={spanStyle}>{slideImage.caption}</button>
-    </div>*/
     <div className={"flex align-middle h-[60vh]"}>
-      {/*<Image className="justify-center m-auto" alt="slideshow" src={slideImage.src} width={size.width ? size.width * 0.5 : 300} height={size.height ? size.height * 0.5 : 300} />*/}
-      <div className={"flex rounded-3xl justify-center w-10/12 h-4/5 m-auto"}>
-        <div className=" shadow-xl rounded-3xl -rotate-12 m-auto w-full h-4/5">
-          <Link href="../pages/GameDevPage">
-            <Image className="rounded-3xl hover:scale-110 transition duration-300" alt="Cyferd" src="/Zombie3D_New.gif" fill style={{objectFit: "contain", borderRadius: "5px"}}  />
-          </Link>
-        </div>
-        <div className=" shadow-xl overflow-auto scroll-smooth p-4 rotate-12 my-auto bg-rose-50 opacity-90 rounded-3xl w-full h-4/5">
-          <h2 className=" font-bold text-center mx-auto mb-1 text-xl">Game Development UX</h2>
-          <p className=" text-sm text-center">(Adobe Photoshop, Blender, Mixamo, Lo-fi Sketches)</p>
-          <button className="bg-white rounded-xl p-2 m-4 opacity-100 flex drop-shadow-md ml-auto mr-full"><Link href="../pages/GameDevPage">Case Study ➤</Link></button>
-          <p className="">Using 3D modelling tools to bring my textures to life, I designed the layouts for models and maps for an indie game called Zomboid.</p>
-        </div>
+      <div className="h-full bg-white w-[40vw] mx-auto rounded-xl border border-gray-400">
+
       </div>
     </div>
   );

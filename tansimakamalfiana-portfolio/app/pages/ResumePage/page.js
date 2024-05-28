@@ -17,14 +17,14 @@ export default function ResumePage() {
                            "h-full mt-6 mx-auto w-full"]
 
   return (
-    <main className="bg-rose-100 text-black my-auto flex-col flex flex-wrap ">
+    <main className="bg-white text-black my-auto flex-col flex flex-wrap ">
       <Navigation />
       { scrollY > 500 &&
       <div className={"transition duration-500 opacity-100"}>
         <BackButton url="#Navbar" />
       </div>}
 
-      <div className="w-screen bg-pink-50 flex-col pb-12">
+      <div className="w-screen bg-white flex-col pb-12">
         <h1 className=" mx-auto justify-center flex py-4 mb-12 text-4xl">RESUME</h1>
 
         {/* Double-sided pane */}

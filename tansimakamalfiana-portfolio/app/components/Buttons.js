@@ -1,12 +1,12 @@
-import Image from "next/image";
-import Link from "next/link"
 
-export default function Button({text, href, className}) {
+import Link from "next/link";
+
+export default function Button({text, href, className, bgcolor, scale}) {
   return (
-    <main className="transition duration-300 hover:scale-110">
-        <Link href={href ? href : ""}>
-            <button className={className ? className : " text-2xl p-2 hover:text-rose-300"} >{text ? text : "Text"}</button>
+    <div className={"transition duration-300 px-4 py-2 " + (bgcolor ? bgcolor : "") + (scale ? scale : " hover:scale-110 ")}>
+        <Link className="size-full relative" href={href ? href : ""}>
+            <div className={className ? className : " text-2xl p-2"} >{text ? text : "Text"}</div>
         </Link>
-    </main>
+    </div>
   );
 }

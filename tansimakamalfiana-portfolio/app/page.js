@@ -15,6 +15,7 @@ import { useState, useEffect } from "react"
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSnowPreset } from "tsparticles-preset-snow";
+import { loadImageShape } from "tsparticles-shape-image";
 
 
 export default function Home() {
@@ -26,49 +27,25 @@ export default function Home() {
     // starting from v2 you can add only the features you need reducing the bundle size
     //await loadFull(engine);
     await loadSnowPreset(engine);
+    await loadImageShape(engine);
     }, []);
 
-    const particlesLoaded = useCallback(async container => {
-      await console.log(container);
-    }, []);
+  const particlesLoaded = useCallback(async container => {
+    await console.log(container);
+  }, []);
 
   const size = useWindowSize();
 
   return (
-    <main className="w-screen h-screen bg-rose-100 flex">
+    <main className="w-screen h-screen bg-white flex relative">
       <Particles
+            className="absolute Z-50"
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                /*preset: "snow",
-                background: {
-                    color: {
-                        value: "#FFE6E4",
-                    },
-                },
-                particles: {
-                    color: 
-                    shape: {
-                        type: "image",
-                        image: {
-                            src: "./Flower.png",
-                        }
-                    },
-                    size: {
-                        value: {min: 10, max: 35}
-                    }
-                },*/
                 interactivity: {
                     events: {
-                        onClick: {
-                            enable: false,
-                            mode: "push",
-                        },
-                        onHover: {
-                            enable: false,
-                            mode: "repulse",
-                        },
                         resize: true,
                     },
                     modes: {
@@ -83,7 +60,7 @@ export default function Home() {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: "#FFE4E6"
                     },
                     move: {
                         direction: "bottom",
@@ -92,7 +69,7 @@ export default function Home() {
                             default: "out",
                         },
                         random: false,
-                        speed: 3,
+                        speed: 2,
                         straight: false,
                     },
                     number: {
@@ -100,23 +77,22 @@ export default function Home() {
                             enable: true,
                             area: 10000,
                         },
-                        value: 100,
+                        value: 80,
                     },
                     opacity: {
                         value: 0.5,
                     },
                     shape: {
-                        type: "circle"
+                        type: "circle",
                     },
                     size: {
-                        value: { min: 10, max: 35 },
+                        value: { min: 25, max: 45 },
                     },
                     zIndex: 0,
                 },
                 detectRetina: true,
             }}
         />
-
 
       <div className="m-auto w-red-200 w-4/5 justify-center z-10">
         {/*<p>{size.width}</p>*/}
@@ -135,12 +111,12 @@ export default function Home() {
 
           <div className="flex-col justify-center ">
             <h1 className={size.width < 1000 ? " text-4xl py-4 px-8 text-center font-extrabold" : " text-6xl py-4 px-8 text-center font-extrabold"}>Tansima Kamal Fiana</h1>
-            <h3 className={size.width < 1000 ? " text-xl px-8 flex justify-center text-center font-poppinsThin" : " text-4xl px-8 flex justify-center text-center font-poppinsThin"}>Hi, I&apos;m Fiona! I&apos;m a recent graduate with a passion for Web Development, UX/UI design, Data Analysis, and Software Development.</h3>
+            <h3 className={size.width < 1000 ? " text-xl px-8 flex justify-center text-center font-poppinsThin" : " text-4xl px-8 flex justify-center text-center font-poppinsThin"}>Hi, I&apos;m Fiona! I&apos;m a recent grad with a love for web development, UI/UX design, and solving problems. I enjoy crafting digital experiences that are both intuitive and visually appealing, aiming to make a real impact.</h3>
             
             <div className="flex w-full justify-evenly m-auto py-8 px-24">
-              <Buttons text="PORTFOLIO" href="../pages/PortfolioPage"/>
-              <Buttons text="RESUME" href="../pages/ResumePage"/>
-              <Buttons text="CONTACT" href="../pages/ContactPage" />
+              <Buttons text="PORTFOLIO" href="../pages/PortfolioPage" bgcolor="hover:bg-[#ffee32]"/>
+              <Buttons text="RESUME" href="../pages/ResumePage" bgcolor="hover:bg-[#f77f00]"/>
+              <Buttons text="CONTACT" href="../pages/ContactPage" bgcolor="hover:bg-[#ED4672]"/>
             </div>
           </div>
         </div>

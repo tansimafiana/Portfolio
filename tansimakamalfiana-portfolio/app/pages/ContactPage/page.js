@@ -13,7 +13,7 @@ export default function ContactPage() {
   const size = useWindowSize()
   
   return (
-<main className="w-screen h-screen bg-rose-100 flex-col text-black">
+<main className="w-screen h-screen bg-white flex-col text-black">
       
             <Navigation/>
 
