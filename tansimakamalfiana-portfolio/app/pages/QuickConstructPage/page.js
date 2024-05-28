@@ -56,7 +56,7 @@ export default function QuickConstructPage() {
             <PieChart src="/Piechart2.png" className="w-[400px] h-[400px] ml-12" />
           </div>
           <div className="flex mx-auto justify-center">
-            <PieChart src="/Piechart3.png" className="" />
+            <PieChart src="/Piechart3.png" className="w-[50%] mx-auto" />
           </div>
         </div>
       </div>
