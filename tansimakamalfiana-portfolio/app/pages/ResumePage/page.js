@@ -141,14 +141,13 @@ Technologists, Software Testing and Deployment, Capstone</h3>
             <h2 className=" text-3xl mt-8 font-normal">🌸 <span className="ml-6">Skills</span></h2>
             <div>
               <h3 className=" text-2xl mt-4 font-normal">Technical</h3>
-              <p>Figma, Adobe Photoshop, Illustrator, Python, SQL, JavaScript, HTML/CSS, React Native,
+              <p>Figma, Adobe Photoshop, Illustrator, Python, SQL, JavaScript, HTML/CSS, Tailwind CSS, React Native,
 JSON, WordPress, Figma, MS Office, Excel, PowerPoint, SharePoint, Visio, Access Database</p>
             </div>
             <div>
               <h3 className=" text-2xl mt-4 font-normal">Skills</h3>
               <p>UX/UI, Agile Methodologies, SDLC, Use Cases, Test Cases/Scripts, Requirements Gathering,
-Web Development, Software Deployment, RDBMS, Prototyping, Documentation, Programming,
-Technical Analysis, Data Analysis, Project Management, Retail, Content Creation, Customer Service,
+Web Development, Software Deployment, RDBMS, Prototyping, Documentation, Programming, Data Analysis, Project Management, Retail, Content Creation, Customer Service,
 KPIs</p>
             </div>
             <div>
