@@ -33,7 +33,7 @@ export default function QuickConstructPage() {
 
           {/* Opening Picture */}
           <div className="w-full mt-8 mb-8 relative">
-            <Image src="/OpeningImage.png"
+            <Image src="/Opening Image Full.png"
                    alt="Opening Image Background"
                    width="1920"
                    height="1080"

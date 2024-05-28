@@ -74,7 +74,7 @@ storage systems.</p>
           <h1 className="text-4xl pt-16 font-bold">Objective Tree</h1>
           <p className=" text-xl pt-12">A friend from SAIT&apos;s Mechanical Engineering program approached me about collaborating on a project. Initially, I didn&apos;t give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
           <div className="mt-16" />
-          <PieChart src="/Capture.PNG" width="1312" height="737" className=" w-[80%] mx-auto " bgcolor={" bg-[#fff1f2] "} full={true}/>
+          <PieChart src="/Capture.PNG" width="1312" height="737" className=" w-[80%] mx-auto flex justify-center rounded-xl shadow-lg " bgcolor={" bg-[#fff1f2] "} full={true}/>
         </div>
       </div>
 
@@ -113,8 +113,10 @@ storage systems.</p>
           
           <h2 className="text-xl font-bold  mt-12">Manual Page</h2>
           <p className="text-xl mb-8 ">This page is similar to the Auto page except the function of the robot is slower and can be used for testing.</p>
-          <PieChart src="/Manual page.png" width="1194" height="834" className=" w-[70%] mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
-          
+          <div className="flex">
+            <PieChart src="/Manual page.png" width="1194" height="834" className=" w-[70%] mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
+          </div>
+
           <h2 className="text-xl font-bold  mt-12">Signed In User Page</h2>
           <p className="text-xl mb-8 ">Displays the current user and session details.</p>
           <PieChart src="/userpage - signed in.png" width="1194" height="834" className=" w-[70%] mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
