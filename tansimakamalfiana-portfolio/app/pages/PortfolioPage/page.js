@@ -32,7 +32,7 @@ export default function ContactPage() {
         </div>
       </div>
       <div className="w-4/5 mx-auto">
-        <Slideshow slideData={[returnQuickConstruct(), returnEngineeringUX(), returnInternship(), returnCapstone(), returnPortfolio(), returnGameDevPage()]}/>
+        <Slideshow slideData={[returnQuickConstruct(), returnEngineeringUX(), returnInternship()]}/> {/*//, returnCapstone(), returnPortfolio(), returnGameDevPage()]}/>*/}
       </div>
             
     </main>   
