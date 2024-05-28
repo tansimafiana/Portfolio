@@ -15,6 +15,11 @@ export default function WebDevPage() {
   const inactiveTabClass = "py-4 px-8 bg-rose-100 rounded-t-lg hover:bg-rose-50 "
   const [groupActive, setGroupActive] = useState([true, false])
 
+  useEffect(() => {
+    if (typeof window === undefined || typeof window === "undefined") {
+      return;
+    }
+  });
 
   return (
     <main className="bg-white text-black my-auto flex-col flex flex-wrap ">

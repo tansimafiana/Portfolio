@@ -16,6 +16,12 @@ export default function ResumePage() {
                            "h-full",
                            "h-full mt-6 mx-auto w-full"]
 
+  useEffect(() => {
+    if (typeof window === undefined || typeof window === "undefined") {
+      return;
+    }
+  });
+
   return (
     <main className="bg-white text-black my-auto flex-col flex flex-wrap ">
       <Navigation />
@@ -54,32 +60,19 @@ export default function ResumePage() {
               </ul>
             </div>
 
-            {/* IT Volunteering */}
             <div className="mt-6">
             <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">IT Volunteering Support Specialist </h3>
-                <h3 className="ml-auto pr-4">01/22 - 06/22</h3>
-              </div>
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="ml-auto pr-4 italic">Saudi Arabia, Jeddah</h3>
-              </div>
-              <ul className="mt-4">
-                <li>• Resolved campus computer issues for 100+ users</li>
-              </ul>
-            </div>
-
-            <div className="mt-6">
-            <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">Data Entry | V&J ACCOUNTING INC</h3>
+                <h3 className="mr-auto justify-start text-2xl font-normal">Data Entry Assistant | V&J Accounting Inc.</h3>
                 <h3 className="ml-auto pr-4">04/23 - 09/23</h3>
               </div>
               <div className="w-full flex justify-space mx-auto">
                 <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
               </div>
               <ul className="mt-4 space-y-1">
-                <li>• Input financial data, including transactions, invoices, receipts, and payment details using Excel</li>
-                <li>• Analyze and categorize financial transactions to enhance budget tracking and expense management; utilized Excel for precise categorization, ensuring alignment with financial reporting standards.</li>
-                <li>• Accuracy, attention to detail, and adherence to financial regulations</li>
+                <li>• Utilize advanced Excel functions (pivot tables, VLOOKUP, macros) to optimize financial processes.</li>
+                <li>• Collaborate with clients to gather requirements and implement efficient data entry protocols for accurate financial reporting.</li>
+                <li>• Analyze transactions for budget tracking and develop monthly reports and dashboards for actionable insights.</li>
+                <li>• Employed SQL database management techniques to join tables and merge datasets, enhancing data integrity.</li>
               </ul>
             </div>
 
@@ -92,14 +85,16 @@ export default function ResumePage() {
                 <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
               </div>
               <ul className="mt-4">
-                <li>• Produced financial reports detailing cost breakdowns and profitability analysis, supporting strategic decision-making for the body shop department, highlighting strong analytical skills, business acumen, and customer service skills</li>
+                <li>• Generated financial reports on cost breakdowns and profitability, aiding strategic decision-making.</li>
+                <li>• Trained sales associates, enhancing team performance and customer service quality.</li>
+                <li>• Enhanced team effectiveness by honing communication and customer relationship skills, fostering a client-centric environment.</li>
               </ul>
             </div>
 
             <h2 className=" text-3xl pb-12 mt-10">🌸 <span className="ml-6">Projects</span></h2>
             <div className="">
               <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">Capstone Project</h3>
+                <h3 className="mr-auto justify-start text-2xl font-normal">UX/Front-end Lead | Capstone Project</h3>
                 <h3 className="ml-auto pr-4">01/24 - 04/24</h3>
               </div>
               <div className="w-full flex justify-space mx-auto">
@@ -107,12 +102,10 @@ export default function ResumePage() {
                 <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
               </div>
               <ul className="mt-4 space-y-1">
-                <li>• Led Capstone team to develop dynamic cat breeding website</li>
-                <li>• Utilized React.js, Next.js, Node.js for scalability and front end, Firebase for real-time database</li>
-                <li>• Leveraged Visual Studio Code for coding, debugging, and Git/GitHub version control, achieving a boost in code quality and deployment efficiency</li>
-                <li>• Employed UML diagrams for system architecture, following agile and scrum methodologies</li>
-                <li>• Designed and developed an admin dashboard using React.js; streamlined management of 50+ cat breeds, 100 cats, and interactive site content, focusing in a increase in user satisfaction, and site content</li>
-                <li>• Implemented Tailwind CSS for responsive design</li>
+                <li>• Collaborated Capstone team to develop a dynamic cat breeding website using React.js, Next.js, and Node.js for the frontend and Firebase for real-time database interactions.</li>
+                <li>• Led UX design efforts using Figma to create intuitive, user-friendly interfaces, enhancing the overall user experience.</li>
+                <li>• Streamlined development workflows with Visual Studio Code and Git/GitHub for enhanced coding, debugging, and version control, boosting code quality and deployment speed.</li>
+                <li>• Engineered an admin dashboard to efficiently manage over 50 cat breeds and 100 cats, boosting user engagement and interactive site content.</li>
               </ul>
             </div>
           </div>
@@ -125,36 +118,42 @@ export default function ResumePage() {
               <h3 className="mr-1  justify-start text-2xl font-normal">Southern Alberta <br/>Institute of Technology</h3>
               <h3 className=" ml-auto text-nowrap pr-4">09/22 - 04/24</h3>
             </div>
+            <div className="w-full flex justify-space mx-auto pb-4">
+              <h3 className="mr-auto pr-4 text-lg">Software Development Diploma</h3>
+              <h3 className="ml-auto pr-4 text-nowrap text-right italic">Calgary, AB</h3>
+            </div>
             <div className="w-full flex justify-space mx-auto">
-              <h3 className="mr-auto pr-4">Diploma in Software Development - Global Campus Scholarship Award</h3>
-              <h3 className="ml-auto pr-4 text-nowrap text-right">Calgary, AB</h3>
+              <h3 className="mr-auto pr-4">Relevant Coursework: User-Experience and Design, Web Development, Object-Oriented
+Programming, Software Projects: Analysis, Design, and Management, Critical Thinking, Database
+Design and Programming, Emerging Trends, Technical Communications. Mathematics for
+Technologists, Software Testing and Deployment, Capstone</h3>
+            </div>
+
+            <div className="w-full flex justify-space mx-auto pt-8">
+              <h3 className="mr-1  justify-start text-2xl font-normal">UX Design Institute</h3>
+              <h3 className=" ml-auto text-nowrap pr-4">Present</h3>
+            </div>
+            <div className="w-full flex justify-space mx-auto pb-4">
+              <h3 className="mr-auto pr-4 text-lg">UX Design Diploma Certificate</h3>
+              <h3 className="ml-auto pr-4 text-nowrap text-right italic">Remote</h3>
             </div>
 
             <h2 className=" text-3xl mt-8 font-normal">🌸 <span className="ml-6">Skills</span></h2>
             <div>
-              <h3 className=" text-2xl mt-4 font-normal">Languages</h3>
-              <p>Python, C-Sharp, SQL, Node.js, React Native, Next.js, XML, JavaScript, HTML5/CSS, JSON, Gradle</p>
-            </div>
-            <div>
-              <h3 className=" text-2xl mt-4 font-normal">Frameworks</h3>
-              <p>React Native, Next.js, Node.js, Flask, FastAPI, .NET Framework, XNA Framework</p>
-            </div>
-            <div>
-              <h3 className=" text-2xl mt-4 font-normal">Developer Tools</h3>
-              <p>Git, VS Code, Adobe Photoshop, Blender, Figma, Software Ideas Modeler, MySQL, Oracle, SQLite, ASP.NET Core, Android Studio</p>
+              <h3 className=" text-2xl mt-4 font-normal">Technical</h3>
+              <p>Figma, Adobe Photoshop, Illustrator, Python, SQL, JavaScript, HTML/CSS, React Native,
+JSON, WordPress, Figma, MS Office, Excel, PowerPoint, SharePoint, Visio, Access Database</p>
             </div>
             <div>
               <h3 className=" text-2xl mt-4 font-normal">Skills</h3>
-              <p>Use Cases, Test cases/scripts, Agile Methodologies, Emerging technologies, Software Development Life
-Cycle, Requirements Gathering, Application Development, Microsoft Office, Debugging, QA, Prototyping, Documentation, Business
-Requirements, Software Troubleshooting, Technical Analysis, Resource Management, Project
-Management, Engineering principles, Stakeholder Management, Cost Analysis, Economic principles, Defect Management</p>
+              <p>UX/UI, Agile Methodologies, SDLC, Use Cases, Test Cases/Scripts, Requirements Gathering,
+Web Development, Software Deployment, RDBMS, Prototyping, Documentation, Programming,
+Technical Analysis, Data Analysis, Project Management, Retail, Content Creation, Customer Service,
+KPIs</p>
             </div>
             <div>
-              <h3 className=" text-2xl mt-4 font-normal">Suitability</h3>
-              <p>Time Management, Problem-solving, Interpersonal skills, Communication, Written Communication,
-Collaborative, Organized, Team player, Flexibility, Analytical, Presentation, Customer Reporting tools, Key Performance
-Indicators, Financial Reporting, Customer service</p>
+              <h3 className=" text-2xl mt-4 font-normal">Interests</h3>
+              <p>A passionate skier who brings the same energy and determination from the slopes to solving technical challenges.</p>
             </div>
           </div>
         </div>
