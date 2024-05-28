@@ -56,7 +56,7 @@ function returnQuickConstruct() {
               <h1 className="font-semibold text-3xl  mt-5">QuickConstruct</h1>
               <div className="flex flex-col mr-auto max-w-[90%]">
                 <p className="text-gray-600 mb-4 text-justify mt-2 text-sm">Industry professional application for construction project managers and tradespeople, incorporating well-planned UX/UI designing steps to ensure a flexible and user-friendly experience that is excellent for every type of user.</p>
-                <Link href="./QuickConstructPage" className="size-fit rounded-xl ml-auto">
+                <Link href="./QuickConstructPage" className="size-fit rounded-xl absolute top-0 right-0">
                   <div className=" mt-3 size-fit px-4 py-2 bg-gray-100 rounded-xl shadow-lg hover:cursor-pointer hover:text-purple-700 hover:scale-105 transition duration-300 ">
                       <p className="">Case Study <span className="font-extrabold">→</span></p>
                   </div>
@@ -170,7 +170,7 @@ function returnEngineeringUX() {
               <h1 className="font-semibold text-3xl  mt-5">Engineering UX</h1>
               <div className="flex flex-col mr-auto max-w-[90%]">
                 <p className="text-gray-600 mb-4 mt-2 text-sm">Collaborating with mechanical engineering students to help build a uniform and user-friendly experience that is easy to understand and essential for operating automated robotics systems.</p>
-                <Link href="./EngineeringPage" className="size-fit rounded-xl ml-auto">
+                <Link href="./EngineeringPage" className="size-fit rounded-xl absolute top-0 right-0">
                   <div className=" mt-3 size-fit px-4 py-2 bg-gray-100 rounded-xl shadow-lg hover:cursor-pointer hover:text-[#5aa5dc] hover:scale-105 transition duration-300 ">
                       <p className="">Case Study <span className="font-extrabold">→</span></p>
                   </div>
