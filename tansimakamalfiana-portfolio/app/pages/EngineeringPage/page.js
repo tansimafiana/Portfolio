@@ -50,15 +50,15 @@ export default function EngineeringPage() {
       {/* Second Page */}
       <div className="bg-[#e4f7ff] h-fit w-screen pb-20">
         <div className="w-8/12 mx-auto">
-          <h1 className="text-6xl pt-16 font-bold">Project Overview</h1>
-          <p className=" text-2xl pt-12">A friend from SAIT&apos;s Mechanical Engineering program approached me about collaborating on a project. Initially, I didn&apos;t give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
+          <h1 className="text-4xl pt-16 font-bold">Project Overview</h1>
+          <p className=" text-xl pt-12">A friend from SAIT&apos;s Mechanical Engineering program approached me about collaborating on a project. Initially, I didn&apos;t give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
         </div>
       </div>
 
       <div className="bg-white h-fit w-screen pb-20">
         <div className="w-8/12 mx-auto">
-          <h1 className="text-6xl pt-16 font-bold">Project Statement</h1>
-          <p className=" text-2xl pt-12">This project aims to properly integrate the ASRS system with the IRB 140 work-cell to 
+          <h1 className="text-4xl pt-16 font-bold">Project Statement</h1>
+          <p className=" text-xl pt-12">This project aims to properly integrate the ASRS system with the IRB 140 work-cell to 
 transport and store raw material in storage trays, while meeting existing safety 
 requirements. They collaborated with other capstone teams, they will integrate the use of the 
 Lab AGV and storage of cartridges containing raw material into the ecosystem.
@@ -71,8 +71,8 @@ storage systems.</p>
 
       <div className="bg-[#e4f7ff] h-fit w-screen pb-20">
         <div className="w-8/12 mx-auto">
-          <h1 className="text-6xl pt-16 font-bold">Objective Tree</h1>
-          <p className=" text-2xl pt-12">A friend from SAIT&apos;s Mechanical Engineering program approached me about collaborating on a project. Initially, I didn&apos;t give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
+          <h1 className="text-4xl pt-16 font-bold">Objective Tree</h1>
+          <p className=" text-xl pt-12">A friend from SAIT&apos;s Mechanical Engineering program approached me about collaborating on a project. Initially, I didn&apos;t give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
           <div className="mt-16" />
           <PieChart src="/Capture.PNG" width="1312" height="737" className=" w-[80%] mx-auto " bgcolor={" bg-[#fff1f2] "} />
         </div>
@@ -80,15 +80,15 @@ storage systems.</p>
 
       <div className="bg-white h-fit w-screen pb-20">
         <div className="w-8/12 mx-auto">
-          <h1 className="text-6xl pt-16 font-bold">Contribution</h1>
-          <p className=" text-2xl pt-12">I have created a Figma design for the user interface (UI) of the HMI (Human-Machine Interface) for the ASRS project. The UI is intended to guide the user through each function screen, such as operating the robot or accessing the settings. They are using GX Designer to code the frontend UI of the HMI and asked me if I could come up with a user-friendly Figma UX for them to reference. At first, I had no clue what they were talking about, but when they explained it to me, I started sketching some low-fidelity prototypes as they explained.</p>
+          <h1 className="text-4xl pt-16 font-bold">Contribution</h1>
+          <p className=" text-xl pt-12">I have created a Figma design for the user interface (UI) of the HMI (Human-Machine Interface) for the ASRS project. The UI is intended to guide the user through each function screen, such as operating the robot or accessing the settings. They are using GX Designer to code the frontend UI of the HMI and asked me if I could come up with a user-friendly Figma UX for them to reference. At first, I had no clue what they were talking about, but when they explained it to me, I started sketching some low-fidelity prototypes as they explained.</p>
         </div>
       </div>
       
       <div className="bg-[#e4f7ff] h-fit w-screen pb-20">
         <div className="w-8/12 mx-auto">
-          <h1 className="text-6xl pt-16 font-bold">Review 1</h1>
-          <p className=" text-2xl pt-12">A friend from SAIT&apos;s Mechanical Engineering program approached me about collaborating on a project. Initially, I didn&apos;t give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
+          <h1 className="text-4xl pt-16 font-bold">Review 1</h1>
+          <p className=" text-xl pt-12">A friend from SAIT&apos;s Mechanical Engineering program approached me about collaborating on a project. Initially, I didn&apos;t give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
           
           <div className="space-x-6 flex mt-16">
             <PieChart src="/lofip.jpeg" width="2000" height="1126" className=" w-[80%] mx-auto " bgcolor={" bg-[#fff1f2] "} />
@@ -99,8 +99,8 @@ storage systems.</p>
 
       <div className="bg-white h-fit w-screen pb-20">
         <div className="w-8/12 mx-auto">
-          <h1 className="text-6xl pt-16 font-bold">Redesign Process</h1>
-          <p className=" text-2xl pt-12">I managed to transform those initial low-fidelity prototypes into high-fidelity designs. Incorporating both their guidance and some of my own ideas, I refined the UI to be even more user-friendly and efficient. These Figma prototypes now serve as comprehensive guides for the GX Designer coding process, ensuring that the frontend UI of the HMI meets both functionality and usability standards. I still have a few pages left to design, and I&apos;m currently working on them. Stay tuned for the updates!</p>
+          <h1 className="text-4xl pt-16 font-bold">Redesign Process</h1>
+          <p className=" text-xl pt-12">I managed to transform those initial low-fidelity prototypes into high-fidelity designs. Incorporating both their guidance and some of my own ideas, I refined the UI to be even more user-friendly and efficient. These Figma prototypes now serve as comprehensive guides for the GX Designer coding process, ensuring that the frontend UI of the HMI meets both functionality and usability standards. I still have a few pages left to design, and I&apos;m currently working on them. Stay tuned for the updates!</p>
         
           <div  className="mt-24"/>
 
