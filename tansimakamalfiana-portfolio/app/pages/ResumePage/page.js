@@ -45,11 +45,10 @@ export default function ResumePage() {
 
               <ul className="mt-4 space-y-1">
 
-                <li>• Collaborated with the solution expert of Cyferd to develop an innovative mental health application using Cyferd technology, implementing JSON coding</li>
-                <li>• Crafted PowerPoint presentations showcasing application&apos;s front-end features, boosting user satisfaction</li>
-                <li>• Achieved recognition as a Certified Cyferd Modeller for exceptional contributions to project development and implementation</li>
-                <li>• Utilized engineering principles to drive innovation and collaboration, supporting business objectives in a dynamic team setting</li>
-                <li>• Applied Lean principles and process optimization, achieving a 15% reduction in production cycle time and a 20% increase in operational efficiency</li>
+                <li>• Collaborated with the solution expert to develop a mental health application using Cyferd technology and JSON coding. </li>
+                <li>• Crafted PowerPoint presentations to highlight application front-end features, enhancing user satisfaction. </li>
+                <li>• Earned Certified Cyferd Modeller title for contributions to project development and implementation. </li>
+                <li>• Applied business principles to enhance innovation and support business objectives.</li>
 
                 <li>• Reference: <a className="hover:bg-rose-300" href="mailto:haider.al-seaidy@cyferd.com">haider.al-seaidy@cyferd.com</a> </li>
               </ul>

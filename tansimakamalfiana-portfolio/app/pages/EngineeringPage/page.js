@@ -102,6 +102,35 @@ storage systems.</p>
           <h1 className="text-6xl pt-16 font-bold">Redesign Process</h1>
           <p className=" text-2xl pt-12">I managed to transform those initial low-fidelity prototypes into high-fidelity designs. Incorporating both their guidance and some of my own ideas, I refined the UI to be even more user-friendly and efficient. These Figma prototypes now serve as comprehensive guides for the GX Designer coding process, ensuring that the frontend UI of the HMI meets both functionality and usability standards. I still have a few pages left to design, and I&apos;m currently working on them. Stay tuned for the updates!</p>
         
+          <div  className="mt-24"/>
+
+          <h2 className="text-xl font-bold w-[80%] mx-[10%] mt-12">Home Page</h2>
+          <p className="text-xl mb-8 w-[80%] mx-[10%]">The Home Page shows the first thing a new user should see upon booting up the HMI system. There are lights that change colour base on their status of being on or off. The status of these indicators may be externally changed and it is important to have that information in front of the user at most times.</p>
+          <PieChart src="/HomePage.png" width="1194" height="834" className=" w-[70%] mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
+          
+          <h2 className="text-xl font-bold w-[80%] mx-[10%] mt-12">Auto Page</h2>
+          <p className="text-xl mb-8 w-[80%] mx-[10%]">In this page the user can toggle the state of both the motors and the automatic robot function.</p>
+          <PieChart src="/autopage.png" width="1194" height="834" className=" w-[70%] mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
+          
+          <h2 className="text-xl font-bold w-[80%] mx-[10%] mt-12">Manual Page</h2>
+          <p className="text-xl mb-8 w-[80%] mx-[10%]">This page is similar to the Auto page except the function of the robot is slower and can be used for testing.</p>
+          <PieChart src="/Manual page.png" width="1194" height="834" className=" w-[70%] mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
+          
+          <h2 className="text-xl font-bold w-[80%] mx-[10%] mt-12">Signed In User Page</h2>
+          <p className="text-xl mb-8 w-[80%] mx-[10%]">Displays the current user and session details.</p>
+          <PieChart src="/userpage - signed in.png" width="1194" height="834" className=" w-[70%] mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
+          
+          <h2 className="text-xl font-bold w-[80%] mx-[10%] mt-12">Signed Out User Page</h2>
+          <p className="text-xl mb-8 w-[80%] mx-[10%]">Prompts the user to log into an account.</p>
+          <PieChart src="/userpage - signed out.png" width="1194" height="834" className=" w-[70%] mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
+          
+          <h2 className="text-xl font-bold w-[80%] mx-[10%] mt-12">Logistics Page</h2>
+          <p className="text-xl mb-8 w-[80%] mx-[10%]">Shows logistics of the operation of the system. Useful for maintenance.</p>
+          <PieChart src="/logistics page.png" width="1194" height="834" className=" w-[70%] mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
+          
+          <h2 className="text-xl font-bold w-[80%] mx-[10%] mt-12">Settings Page</h2>
+          <p className="text-xl mb-8 w-[80%] mx-[10%]"></p>
+          <PieChart src="/settingspage.png" width="1194" height="834" className=" w-[70%] mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
           
         </div>
       </div>

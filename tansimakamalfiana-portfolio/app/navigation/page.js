@@ -8,7 +8,11 @@ import React, { useState, useEffect } from "react"
 
 export default function Navigation({subpage}) {
   
-  const url = String(window.location);
+  let url;
+  
+  if (typeof window !== "undefined") {
+    url = String(window.location);
+  }
   const [ID, setID] = useState(0);
 
   useEffect(() => {
