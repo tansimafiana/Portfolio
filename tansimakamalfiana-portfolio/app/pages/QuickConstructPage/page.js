@@ -173,6 +173,19 @@ export default function QuickConstructPage() {
             <PieChart src="/Sequence 02.gif" width="1920" height="1080" className=" mx-6 pt-12 rounded-xl bg-black " bgcolor={" bg-white "} priority={true} />
       </div>*/}
 
+          <div  className="mt-12"/>
+
+          <div className=" mt-16">
+            <div className="flex justify-evenly mx-14 space-x-14">
+              <h3 className="text-xl mx-6 w-1/2 text-center">You can create, edit, and save projects with ease. Each project is tailored with its own striking dashboard.</h3>
+              <h3 className="text-xl mx-6 w-1/2 text-center">A practical calendar is useful for creating new events, tasks, and scheduling appointments, all in one place.</h3>
+            </div>
+            <div className="flex space-x-6 mt-4 mx-6">
+              <PieChart src="/dashboardgif.gif" width="1528" height="1004" className=" mx-6 " bgcolor={" bg-black "} />
+              <PieChart src="/calendargif.gif" width="1528" height="1004" className=" mx-6 " bgcolor={" bg-black "} />
+            </div>
+          </div>
+
           <div className=" mt-16">
             <div className="flex justify-evenly mx-6">
               <h3 className="font-bold text-2xl mx-6 text-center w-1/2">Sign Up</h3>
