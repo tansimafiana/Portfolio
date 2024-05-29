@@ -116,11 +116,13 @@ export default function ResumePage() {
 
             <div className="w-full flex justify-space mx-auto">
               <h3 className="mr-1  justify-start text-2xl font-normal">Southern Alberta <br/>Institute of Technology</h3>
-              <h3 className=" ml-auto text-nowrap pr-4">09/22 - 04/24</h3>
+              <div className="ml-auto">
+                <h3 className=" ml-auto text-nowrap pr-4">09/22 - 04/24</h3>
+                <h3 className="ml-auto pr-4 text-nowrap text-right italic mt-2">Calgary, AB</h3>
+              </div>
             </div>
             <div className="w-full flex justify-space mx-auto pb-4">
               <h3 className="mr-auto pr-4 text-lg">Software Development Diploma</h3>
-              <h3 className="ml-auto pr-4 text-nowrap text-right italic">Calgary, AB</h3>
             </div>
             <div className="w-full flex justify-space mx-auto">
               <h3 className="mr-auto pr-4">Relevant Coursework: User-Experience and Design, Web Development, Object-Oriented

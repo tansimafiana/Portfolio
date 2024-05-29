@@ -167,11 +167,11 @@ export default function QuickConstructPage() {
           <h1 className="text-4xl pt-20 font-bold">Final UI Mockups</h1>
           <p className=" text-xl pt-12">The dashboard and calendar are the main features of QuickConstruct. Users can easily add, edit, and track their projects, with each project having its own dedicated dashboard. The calendar allows users to effortlessly add new events, schedule appointments, and set up to-do lists, all on one screen, without any complications.</p>
           
-          <div className="mt-12"/>
+          {/*<div className="mt-12"/>
           <div className="flex mx-auto space-x-6">
             <PieChart src="/Sequence 01.gif" width="1920" height="1080" className=" mx-6 pt-12 rounded-xl bg-black " bgcolor={" bg-white "} priority={true} />
             <PieChart src="/Sequence 02.gif" width="1920" height="1080" className=" mx-6 pt-12 rounded-xl bg-black " bgcolor={" bg-white "} priority={true} />
-          </div>
+      </div>*/}
 
           <div className=" mt-16">
             <div className="flex justify-evenly mx-6">
