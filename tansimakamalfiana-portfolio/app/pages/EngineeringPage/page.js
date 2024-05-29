@@ -99,9 +99,20 @@ storage systems.</p>
       <div className="bg-white h-fit w-screen pb-20">
         <div className="w-8/12 mx-auto">
           <h1 className="text-4xl pt-16 font-bold">Redesign Process</h1>
-          <p className=" text-xl pt-12">I managed to transform those initial low-fidelity prototypes into high-fidelity designs. Incorporating both their guidance and some of my own ideas, I refined the UI to be even more user-friendly and efficient. These Figma prototypes now serve as comprehensive guides for the GX Designer coding process, ensuring that the frontend UI of the HMI meets both functionality and usability standards. I still have a few pages left to design, and I&apos;m currently working on them. Stay tuned for the updates!</p>
+          <p className=" text-xl pt-12">I managed to transform those initial low-fidelity prototypes into high-fidelity designs. Incorporating both their guidance and some of my own ideas, I refined the UI to be even more user-friendly and efficient. These Figma prototypes now serve as comprehensive guides for the GX Designer coding process, ensuring that the frontend UI of the HMI meets both functionality and usability standards.</p>
         
-          <div  className="mt-24"/>
+          <div  className="mt-12"/>
+
+          <p className="text-xl mb-8 ">The Emergency Stop (E-Stop), Motors, and Manual LED buttons change colour based on their external inputs. The user is also able to toggle the state of the manual or automatic process or the power going to the motors with ease from the HMI screen.</p>
+          <div className="flex ">
+            <div className="w-2/3">
+              <PieChart src="/gifhmihomepGE.gif" width="1342" height="838" className=" w-full mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
+            </div>
+            <div className="flex flex-col w-[34.666666%]">
+              <PieChart src="/gifhmi1.gif" width="1402" height="838" className=" h-1/2 mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
+              <PieChart src="/gifhmi2.gif" width="1402" height="838" className=" h-1/2 mx-auto pl-2 " bgcolor={" bg-[#fff1f2] "} />
+            </div>
+          </div>
 
           <h2 className="text-xl font-bold  mt-12">Home Page</h2>
           <p className="text-xl mb-8 ">The Home Page shows the first thing a new user should see upon booting up the HMI system. There are lights that change colour base on their status of being on or off. The status of these indicators may be externally changed and it is important to have that information in front of the user at most times.</p>
