@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import { useState, useEffect } from "react";
 
-export default function PieChart({className, width, height, src, bgcolor, full}) {
+export default function PieChart({className, width, height, src, bgcolor, full, priority}) {
   
     const [popup, setPopup] = useState(false);
 
@@ -14,7 +14,8 @@ export default function PieChart({className, width, height, src, bgcolor, full})
                 alt="Piechart"
                 width={width ? width : "800"}
                 height={height ? height : "800"}
-                className={className}/>
+                className={className}
+                priority={priority ? true: false}/>
         </button>
 
         {/* Popup Section */}
@@ -27,7 +28,8 @@ export default function PieChart({className, width, height, src, bgcolor, full})
                         alt="Piechart"
                         width={width ? width : "800"}
                         height={height ? height : "800"}
-                        className="w-fit h-[90%] my-auto"/>
+                        className="w-fit h-[90%] my-auto"
+                        priority={priority ? true: false}/>
                 </div>
             </div>
         }

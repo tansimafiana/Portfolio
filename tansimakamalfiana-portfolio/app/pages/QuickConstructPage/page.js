@@ -38,6 +38,7 @@ export default function QuickConstructPage() {
                    width="1920"
                    height="1080"
                    unoptimized={true}
+                   priority
                    className="" />
           </div>
         </div>
@@ -168,8 +169,8 @@ export default function QuickConstructPage() {
           
           <div className="mt-12"/>
           <div className="flex mx-auto space-x-6">
-            <PieChart src="/Sequence 01.gif" width="1920" height="1080" className=" mx-6 pt-12 rounded-xl bg-black " bgcolor={" bg-white "} />
-            <PieChart src="/Sequence 02.gif" width="1920" height="1080" className=" mx-6 pt-12 rounded-xl bg-black " bgcolor={" bg-white "} />
+            <PieChart src="/Sequence 01.gif" width="1920" height="1080" className=" mx-6 pt-12 rounded-xl bg-black " bgcolor={" bg-white "} priority={true} />
+            <PieChart src="/Sequence 02.gif" width="1920" height="1080" className=" mx-6 pt-12 rounded-xl bg-black " bgcolor={" bg-white "} priority={true} />
           </div>
 
           <div className=" mt-16">
