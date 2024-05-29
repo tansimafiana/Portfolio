@@ -254,7 +254,7 @@ export default function QuickConstructPage() {
         <div className="w-8/12 mx-auto">
           <h1 className="text-4xl pt-20 font-bold">Key Takeaways</h1>
           <p className=" text-xl pt-12">→ In my journey I made the mistake of worrying about the look of the UI too much. I think taking a step back and reassessing the user flows helped me to re-prioritize the UX.</p>
-          <p className=" text-xl pt-12">→ I could have placed greater emphasis on addressing accessibility needs, which I aim to do going forward.</p>
+          <p className=" text-xl pt-12">→ I could have placed greater emphasis on addressing accessibility needs, which I aim to do going forward by following WCAG.</p>
           <p className=" text-xl pt-12">→ This project shows how far I have come as a UX/UI Designer. I feel like these final mock-ups are so much better than what I started with and I am really proud of that! If you would like to help me improve, please don&apos;t hesitate to reach out. I would love some feedback on my design and on how I could improve!</p>
           <div className="mt-16 mb-20" />
 
