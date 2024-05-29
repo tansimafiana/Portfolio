@@ -72,7 +72,7 @@ storage systems.</p>
       <div className="bg-[#e4f7ff] h-fit w-screen pb-20">
         <div className="w-8/12 mx-auto">
           <h1 className="text-4xl pt-16 font-bold">Objective Tree</h1>
-          <p className=" text-xl pt-12">A friend from SAIT&apos;s Mechanical Engineering program approached me about collaborating on a project. Initially, I didn&apos;t give it much thought, but when they explained that it involved using a robot to pick and place items from a storage system onto a conveyor line using an ABB IRB140 Robot Arm, I was intrigued. The communication systems for the robots utilize PLCs, so I felt that my project management and UX skills could be of great help. And thus began my journey delving into the world of engineers!</p>
+          <p className=" text-xl pt-12"></p>
           <div className="mt-16" />
           <PieChart src="/Capture.PNG" width="1312" height="737" className=" w-[80%] mx-auto flex justify-center rounded-xl shadow-lg " bgcolor={" bg-[#fff1f2] "} full={true}/>
         </div>
