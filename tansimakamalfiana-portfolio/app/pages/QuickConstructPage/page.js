@@ -66,7 +66,7 @@ export default function QuickConstructPage() {
         <div className="w-8/12 mx-auto">
           <h1 className="text-4xl pt-20 font-bold">Getting a clearer picture on the direction</h1>
           <h2 className=" text-2xl pt-12">Competitive Analysis</h2>
-          <p className=" text-xl pt-12">After looking at the results from my survey, I have discovered that people Excel and a simple phone calendar are the most popular used platforms used by the following users. I conducted a competitive analysis to see what were the strengths and weak points of the platforms.</p>
+          <p className=" text-xl pt-12">After looking at the results from my survey, I have discovered that Excel and a simple phone calendar are the most popular used platforms used by the following users. I conducted a competitive analysis to see what were the strengths and weak points of the platforms.</p>
           <div className="mt-16 mb-20" />
 
           <PieChart src="/EngineerTable.png" width="1920" height="1080" className=" w-[80%] mx-auto " bgcolor={" bg-[#240046] "} />
