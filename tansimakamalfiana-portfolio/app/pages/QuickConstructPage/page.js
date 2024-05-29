@@ -206,30 +206,31 @@ export default function QuickConstructPage() {
           <div className=" mt-16">
             <div className="flex justify-evenly mx-6">
               <h3 className="font-bold text-2xl mx-6 text-center w-1/2">Dashboard</h3>
-              <h3 className="font-bold text-2xl mx-6 text-center w-1/2">Add New Calendar Event</h3>
+              <h3 className="font-bold text-2xl mx-6 text-center w-1/2">Calendar</h3>
             </div>
             <div className="flex mx-6 space-x-6 mt-4">
               <PieChart src="/Dashboard (3).png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
-              <PieChart src="/CalendarEvent.png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
+              <PieChart src="/Calendar.png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
             </div>
           </div>
           <div className=" mt-16">
             <div className="flex justify-evenly mx-6">
+              <h3 className="font-bold text-2xl mx-6 text-center w-1/2">Add New Calendar Event</h3>
               <h3 className="font-bold text-2xl mx-6 text-center w-1/2">Messages</h3>
-              <h3 className="font-bold text-2xl mx-6 text-center w-1/2">Meeting</h3>
             </div>
             <div className="flex mx-6 space-x-6 mt-4">
+              <PieChart src="/CalendarEvent.png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
               <PieChart src="/MessagesPage (1).png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
-              <PieChart src="/Meetingpage (2).png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
             </div>
           </div>
           <div className=" mt-16">
             <div className="flex justify-evenly mx-6">
+              <h3 className="font-bold text-2xl mx-6 text-center w-1/2">Meeting</h3>
               <h3 className="font-bold text-2xl mx-6 text-center w-1/2">Profile</h3>
-              <h3 className="font-bold text-2xl mx-6 text-center w-1/2 text-white">Profile</h3>
             </div>
             <div className="flex mx-6 space-x-6 mt-4">
-              <PieChart src="/ProfilePage (2).png" width="1920" height="1080" className=" mx-6 w-[49%]" bgcolor={" bg-white "} />
+              <PieChart src="/Meetingpage (2).png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
+              <PieChart src="/ProfilePage (2).png" width="1920" height="1080" className=" mx-6 " bgcolor={" bg-white "} />
             </div>
           </div>
         </div>
