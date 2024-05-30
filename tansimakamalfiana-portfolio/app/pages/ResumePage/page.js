@@ -60,21 +60,7 @@ export default function ResumePage() {
               </ul>
             </div>
 
-            <div className="mt-6">
-            <div className="w-full flex justify-space mx-auto">
-                <h3 className="mr-auto justify-start text-2xl font-normal">Data Entry Assistant | V&J Accounting Inc.</h3>
-                <h3 className="ml-auto pr-4">04/23 - 09/23</h3>
-              </div>
-              <div className="w-full flex justify-space mx-auto">
-                <h3 className="ml-auto pr-4 italic">Calgary, AB</h3>
-              </div>
-              <ul className="mt-4 space-y-1">
-                <li>• Utilize advanced Excel functions (pivot tables, VLOOKUP, macros) to optimize financial processes.</li>
-                <li>• Collaborate with clients to gather requirements and implement efficient data entry protocols for accurate financial reporting.</li>
-                <li>• Analyze transactions for budget tracking and develop monthly reports and dashboards for actionable insights.</li>
-                <li>• Employed SQL database management techniques to join tables and merge datasets, enhancing data integrity.</li>
-              </ul>
-            </div>
+            
 
             <div className="mt-6">
               <div className="w-full flex justify-space mx-auto">
