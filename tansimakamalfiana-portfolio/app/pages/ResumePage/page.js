@@ -55,8 +55,6 @@ export default function ResumePage() {
                 <li>• Crafted PowerPoint presentations to highlight application front-end features, enhancing user satisfaction. </li>
                 <li>• Earned Certified Cyferd Modeller title for contributions to project development and implementation. </li>
                 <li>• Applied business principles to enhance innovation and support business objectives.</li>
-
-                <li>• Reference: <a className="hover:bg-rose-300" href="mailto:haider.al-seaidy@cyferd.com">haider.al-seaidy@cyferd.com</a> </li>
               </ul>
             </div>
 
