@@ -6,8 +6,11 @@ import Link from "next/link"
 import Navigation from "@/app/navigation/page"
 import Slideshow from "@/app/components/Slideshow";
 import { Slide } from "react-slideshow-image";
+import { useState, useEffect } from "react"
 
-export default function ContactPage() {
+export default function PortfolioPage() {
+  const size = useWindowSize();
+  
   return (
     <main className="w-screen bg-white flex-col text-black">
       <Navigation/>
@@ -45,7 +48,7 @@ function returnQuickConstruct() {
       <div className="relative h-full bg-white w-[50vw] mx-auto rounded-xl border border-gray-300 flex flex-col z-10 overflow-hidden shadow-lg mb-4">
         <div className=" absolute top-0 ml-[5%] mr-[10%] h-[200px] w-[80%] mt-10 z-20">
           <div className="flex w-full">
-            <div className=" p-4 bg-gray-200 size-full max-w-24 max-h-24 mt-6 rounded-full">
+            <div className=" p-4 bg-gray-200 size-full max-w-24 max-h-24 mt-6 rounded-full min-h-20 min-w-20">
               <Image src="/QuickConstruct Icon.png"
                     alt="Quick Construct Icon"
                     width="256"
@@ -227,3 +230,34 @@ function returnGameDevPage() {
     </div>
   );
 };
+
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+     
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
+}

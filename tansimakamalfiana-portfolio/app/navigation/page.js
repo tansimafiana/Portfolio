@@ -27,7 +27,7 @@ export default function Navigation({subpage}) {
   }, [url]);
 
   return (
-    <main className="bg-white h-24 w-full flex">
+    <main className="bg-white h-24 w-screen flex">
       <Link href="../" className="my-auto px-6 pb-6">
         <IoMdHome className="w-8 h-8 mt-6 ml-6 hover:scale-110 transition duration-300"/>
       </Link>
