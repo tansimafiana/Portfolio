@@ -114,9 +114,9 @@ export default function Home() {
             <h3 className={size.width < 1000 ? " text-xl px-8 flex justify-center text-center font-poppinsThin" : " text-4xl px-8 flex justify-center text-center font-poppinsThin"}>Hi, I&apos;m Fiona! I&apos;m a recent grad with a love for web development, UI/UX design, and solving problems. I enjoy crafting digital experiences that are both intuitive and visually appealing, aiming to make a real impact.</h3>
             
             <div className="flex w-full justify-evenly m-auto py-8 px-24">
-              <Buttons text="PORTFOLIO" href="../pages/PortfolioPage" bgcolor="hover:bg-[#ffee32]"/>
-              <Buttons text="RESUME" href="../pages/ResumePage" bgcolor="hover:bg-[#f77f00]"/>
-              <Buttons text="CONTACT" href="../pages/ContactPage" bgcolor="hover:bg-[#ED4672]"/>
+              <Buttons text="PORTFOLIO" href="../pages/PortfolioPage" bgcolor="hover:bg-[#ffee32]" className={size < 1000 ? "text-xl p-2" : "text-2xl p-2"}/>
+              <Buttons text="RESUME" href="../pages/ResumePage" bgcolor="hover:bg-[#f77f00]" className={size < 1000 ? "text-xl p-2" : "text-2xl p-2"}/>
+              <Buttons text="CONTACT" href="../pages/ContactPage" bgcolor="hover:bg-[#ED4672]" className={size < 1000 ? "text-xl p-2" : "text-2xl p-2"}/>
             </div>
           </div>
         </div>
