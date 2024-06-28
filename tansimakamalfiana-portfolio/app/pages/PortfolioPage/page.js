@@ -35,14 +35,14 @@ export default function PortfolioPage() {
         </div>
       </div>
       <div className="w-4/5 mx-auto">
-        <Slideshow slideData={[returnQuickConstruct(), returnEngineeringUX()]}/> {/*returnInternship() {/*, returnCapstone(), returnPortfolio(), returnGameDevPage()]}/>*/}
+        <Slideshow slideData={[returnQuickConstruct(size), returnEngineeringUX(size)]}/> {/*returnInternship() {/*, returnCapstone(), returnPortfolio(), returnGameDevPage()]}/>*/}
       </div>
             
     </main>   
   );
 }
 
-function returnQuickConstruct() {
+function returnQuickConstruct(size) {
   return (
     <div className={"flex align-middle h-[60vh]"}>
       <div className="relative h-full bg-white w-[50vw] mx-auto rounded-xl border border-gray-300 flex flex-col z-10 overflow-hidden shadow-lg mb-4">
@@ -56,10 +56,10 @@ function returnQuickConstruct() {
                     className=""/>
             </div>
             <div className="flex flex-col ml-8">
-              <h1 className="font-semibold text-3xl  mt-5">QuickConstruct</h1>
+              <h1 className={"font-semibold  mt-5" + (size.width < 800 ? " text-xl " : " text-3xl ")}>QuickConstruct</h1>
               <div className="flex flex-col mr-auto max-w-[90%]">
-                <p className="text-gray-600 mb-4 text-justify mt-2 text-sm">Industry professional application for construction project managers and tradespeople, incorporating well-planned UX/UI designing steps to ensure a flexible and user-friendly experience that is excellent for every type of user.</p>
-                <Link href="./QuickConstructPage" className="size-fit rounded-xl absolute top-0 right-0">
+                <p className={"text-gray-600 mb-4 mt-2 " + (size.width < 800 ? " text-xs " : " text-justify text-sm ")}>Industry professional application for construction project managers and tradespeople, incorporating well-planned UX/UI designing steps to ensure a flexible and user-friendly experience that is excellent for every type of user.</p>
+                <Link href="./QuickConstructPage" className={size.width < 1250 ? "size-fit rounded-xl ml-auto" : "size-fit rounded-xl absolute top-0 right-0"}>
                   <div className=" mt-3 size-fit px-2 py-1 bg-gray-100 rounded-xl shadow-lg hover:cursor-pointer hover:text-purple-700 hover:scale-105 transition duration-300 ">
                       <p className="text-base">Case Study <span className="font-extrabold">→</span></p>
                   </div>
@@ -83,7 +83,7 @@ function returnQuickConstruct() {
               <div className="min-h-[40%] relative"/>
               <Image src="/QuickConstruct Portfolio Thumbnail Screens.png"
                     alt="QuickConstruct Mockup Thumbnail"
-                    className="relative max-h-[45%] mt-auto mb-8 -translate-x-[10%]"
+                    className={"relative max-h-[45%] mt-auto mb-8 transition duration-300 " + (size.width < 1250 ? " scale-[75%] bottom-0 " : " -translate-x-[10%] ")}
                     layout="fill"
                     objectFit="contain"/>
             </div>
@@ -156,7 +156,7 @@ function returnInternship() {
   );
 };
 
-function returnEngineeringUX() {
+function returnEngineeringUX(size) {
   return (
     <div className={"flex align-middle h-[60vh]"}>
       <div className="relative h-full bg-white w-[50vw] mx-auto rounded-xl border border-gray-300 flex flex-col z-10 overflow-hidden shadow-lg mb-4">
@@ -170,10 +170,10 @@ function returnEngineeringUX() {
                     className=""/>
             </div>
             <div className="flex flex-col ml-8">
-              <h1 className="font-semibold text-3xl  mt-5">Engineering UX</h1>
+              <h1 className={"font-semibold  mt-5" + (size.width < 800 ? " text-xl " : " text-3xl ")}>Engineering UX</h1>
               <div className="flex flex-col mr-auto max-w-[90%]">
-                <p className="text-gray-600 mb-4 mt-2 text-sm">Collaborating with mechanical engineering students to help build a uniform and user-friendly experience that is easy to understand and essential for operating automated robotics systems.</p>
-                <Link href="./EngineeringPage" className="size-fit rounded-xl absolute top-0 right-0">
+                <p className={"text-gray-600 mb-4 mt-2 " + (size.width < 800 ? " text-xs " : " text-justify text-sm ")}>Collaborating with mechanical engineering students to help build a uniform and user-friendly experience that is easy to understand and essential for operating automated robotics systems.</p>
+                <Link href="./EngineeringPage" className={size.width < 1250 ? "size-fit rounded-xl ml-auto" : "size-fit rounded-xl absolute top-0 right-0"}>
                   <div className=" mt-3 size-fit px-2 py-1 bg-gray-100 rounded-xl shadow-lg hover:cursor-pointer hover:text-[#5aa5dc] hover:scale-105 transition duration-300 ">
                       <p className="text-base">Case Study <span className="font-extrabold">→</span></p>
                   </div>
@@ -200,7 +200,7 @@ function returnEngineeringUX() {
                       alt="QuickConstruct Mockup Thumbnail"
                       width="1025"
                       height="800"
-                      className="relative h-[80%] w-fit mx-auto mt-8 -translate-x-[20%]"/>
+                      className={"relative h-[80%] w-fit mx-auto mt-8 transition duration-300 " + (size.width < 1250 ? " scale-[75%] bottom-0 translate-y-[20%] " : " -translate-x-[20%] ")}/>
                 
               </div>
             </div>
